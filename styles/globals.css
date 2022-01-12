@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+  .next-image-full-height > div {
+    height: 100% !important;
+  }
+
+  .mdx h1,h2,h3,h4,h5 {
+    @apply font-bold my-2;
+  }
+
+  .mdx h1 {
+    @apply text-3xl mb-8 mt-24 text-center;
+  }
+  .mdx h3 {
+    @apply text-lg;
+  }
+
+  .mdx p {
+    @apply my-2;
+  }
+
+  .mdx a {
+    @apply hover:underline decoration-wavy text-secondary;
+  }
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
