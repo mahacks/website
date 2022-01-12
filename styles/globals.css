@@ -3,7 +3,7 @@
 @tailwind components;
 
 @layer base {
-  .next-image-full-height > div {
+  .next-image-full-height > span {
     height: 100% !important;
   }
 

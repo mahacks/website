@@ -32,19 +32,17 @@ const HomeLayout: React.FC<{}> = ({ children }) => {
             }
 
             .landing-bg-img-container:after {
-              content: '';
+              content: "";
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
               height: 100%;
-              //background: linear-gradient(#985cd6, #FFFFFF);
-              //background: linear-gradient(#000, #B268FF);
               background: white;
               opacity: 0.9;
             }
 
-            .landing-bg-img-container > div {
+            .landing-bg-img-container > span {
               height: 100% !important;
             }
           `}</style>
