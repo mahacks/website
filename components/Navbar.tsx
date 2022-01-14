@@ -12,10 +12,12 @@ const Navbar: React.FC<{}> = ({}) => {
   const [isAtTop, setAtTop] = useState(true)
 
   useEffect(() => {
-    const listener = (e: Event) => {
+    const listener = () => {
       const pos = window.scrollY
       setAtTop(pos < 10)
     }
+
+    listener()
 
     window.addEventListener('scroll', listener)
     return () => window.removeEventListener('scroll', listener)
@@ -30,7 +32,7 @@ const Navbar: React.FC<{}> = ({}) => {
     >
       <div
         className={clsx(
-          'flex gap-7 max-w-6xl mx-auto px-8 transition-all',
+          'flex gap-3 md:gap-7 max-w-6xl mx-auto px-8 transition-all',
           isAtTop ? 'py-8' : 'py-5'
         )}
       >

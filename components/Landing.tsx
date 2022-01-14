@@ -1,10 +1,11 @@
+import Link from 'next/link'
 import { HiOutlineClock, HiOutlineLocationMarker } from 'react-icons/hi'
 import Button from './Button'
 
 const Landing: React.FC = () => {
   return (
-    <div className="h-screen flex flex-col gap-14 justify-center items-center text-center">
-      <h1 className="text-7xl font-extrabold text-transparent drop-shadow-lg bg-clip-text bg-gradient-to-r from-secondary to-primary bg-oversize animate-moving-bg">
+    <div className="mx-1 h-screen flex flex-col gap-14 justify-center items-center text-center">
+      <h1 className="text-5xl md:text-7xl font-extrabold text-transparent drop-shadow-lg bg-clip-text bg-gradient-to-r from-secondary to-primary bg-oversize animate-moving-bg">
         MAHacks VI
       </h1>
 
@@ -24,13 +25,11 @@ const Landing: React.FC = () => {
         </div>
       </div>
 
-      <a
-        href="https://airtable.com/shrXN7pgnRPqKeqzb"
-        target={'_blank'}
-        rel="noreferrer"
-      >
-        <Button>Register Now</Button>
-      </a>
+      <Link href="/register">
+        <a>
+          <Button>Register Now</Button>
+        </a>
+      </Link>
     </div>
   )
 }

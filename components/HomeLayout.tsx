@@ -32,7 +32,7 @@ const HomeLayout: React.FC<{}> = ({ children }) => {
             }
 
             .landing-bg-img-container:after {
-              content: "";
+              content: '';
               position: absolute;
               top: 0;
               left: 0;
