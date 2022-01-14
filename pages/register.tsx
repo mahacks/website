@@ -6,17 +6,18 @@ import Button from 'components/Button'
 import clsx from 'clsx'
 import { RiLoader4Fill } from 'react-icons/ri'
 import axios from 'axios'
+import Input from 'components/Forms/Input'
 
 const Register: NextPage = () => {
   const inputRef = useRef<HTMLInputElement>(null)
 
   const [submitting, setSubmitting] = useState(false)
 
-  const submit = async() => {
+  const submit = async () => {
     setSubmitting(true)
 
     const res = await axios.post('/api/register-email', {
-      email: inputRef.current?.value
+      email: inputRef.current?.value,
     })
 
     setSubmitting(false)
@@ -41,11 +42,7 @@ const Register: NextPage = () => {
         </p>
 
         <div>
-          <input
-            className="rounded-lg p-3 w-full"
-            ref={inputRef}
-            placeholder="wacky@mahacks.com"
-          />
+          <Input placeholder="wacky@mahacks.com" ref={inputRef} />
         </div>
 
         <Button
@@ -55,7 +52,13 @@ const Register: NextPage = () => {
             submit()
           }}
         >
-          {submitting ? <span className='flex justify-center'><RiLoader4Fill size={24} className='animate-spin' /></span> : 'Submit'}
+          {submitting ? (
+            <span className="flex justify-center">
+              <RiLoader4Fill size={24} className="animate-spin" />
+            </span>
+          ) : (
+            'Submit'
+          )}
         </Button>
       </form>
     </div>

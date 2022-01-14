@@ -7,7 +7,10 @@ import crypto from 'crypto'
 import dedent from 'dedent'
 
 const domain = process.env.MAILGUN_DOMAIN!
-const mg = new Mailgun(formData).client({ username: 'api', key: process.env.MAILGUN_KEY! })
+const mg = new Mailgun(formData).client({
+  username: 'api',
+  key: process.env.MAILGUN_KEY!,
+})
 
 export default async function handler(
   req: NextApiRequest,
@@ -15,7 +18,7 @@ export default async function handler(
 ) {
   const { email } = req.body
 
-  if (!email) return res.status(400).send("No email")
+  if (!email) return res.status(400).send('No email')
 
   const verificationSecret = crypto.randomBytes(16).toString('hex')
 
@@ -29,15 +32,15 @@ export default async function handler(
     
     Please click the link below to apply for MAHacks VI. We can't wait to see you!
 
-    http://localhost:3000/api/apply/${verificationSecret}
+    http://localhost:3000/application/${verificationSecret}
     
     If you have any questions, please reach out to team@mahacks.com.
     
     Thanks,
-    The MAHacks Team`
+    The MAHacks Team`,
   })
 
   res.json({
-    sent: true
+    sent: true,
   })
 }
