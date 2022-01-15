@@ -54,10 +54,12 @@ const Application: NextPage<ApplicationPageProps> = ({ email, secret }) => {
   }
 
   useEffect(() => {
-    window.addEventListener('beforeunload', (e) => {
+    const l = (e) => {
       e.preventDefault()
       e.returnValue = ''
-    })
+    }
+    window.addEventListener('beforeunload', l)
+    return () => window.removeEventListener('beforeunload', l)
   }, [])
 
   return (
@@ -150,8 +152,8 @@ const Application: NextPage<ApplicationPageProps> = ({ email, secret }) => {
               Select an option
             </option>
             <option value="none">I&apos;ve never written code before</option>
-            <option value="beginner">The Best Beginner</option>
-            <option value="intermediate">Awesomely Intermediate</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
             <option value="advanced">Ultra-ninja supreme supercoder</option>
           </Input>
         </FormField>

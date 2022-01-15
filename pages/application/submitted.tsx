@@ -6,7 +6,7 @@ const Submitted: NextPage = () => {
     <div className="h-screen bg-gradient-to-br from-primary to-secondary bg-oversize animate-moving-bg flex justify-center items-center gap-4">
       <div className="text-center p-8 bg-white bg-opacity-70 text-black rounded-xl">
         <h2 className="text-5xl font-semibold mb-16">
-          <span className='animate-spin inline-block'>🥳</span> Yay! You&apos;re registered for MAHacks!
+          🥳 Yay! You&apos;re registered for MAHacks!
         </h2>
         <div>
           <p>
