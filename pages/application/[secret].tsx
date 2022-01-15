@@ -20,15 +20,14 @@ import { useRouter } from 'next/router'
 
 type ApplicationFormData = ApplicationFields & {}
 
-interface ApplicationPageProps {
+const SectionHeading: React.FC = ({ children }) => (
+  <h2 className="text-xl font-semibold">{children}</h2>
+)
+
+const Application: NextPage<{
   email: string
   secret: string
-}
-
-        
-        const SectionHeading: React.FC = ({ children }) => <h2 className='text-xl font-semibold'>{children}</h2>
-
-const Application: NextPage<ApplicationPageProps> = ({ email, secret }) => {
+}> = ({ email, secret }) => {
   const { register, handleSubmit } = useForm<ApplicationFormData>()
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState(false)
@@ -158,21 +157,44 @@ const Application: NextPage<ApplicationPageProps> = ({ email, secret }) => {
           </Input>
         </FormField>
 
+        <FormField label="Have you attended a hackathon before?">
+          <Input as="select" {...register('hackathon_experience')}>
+            <option hidden disabled selected value="">
+              Select an option
+            </option>
+            <option value="none">No</option>
+            <option value="virtual">Yes, virtually</option>
+            <option value="in-person">Yes, in person</option>
+          </Input>
+        </FormField>
+
         <SectionHeading>Parent/Guardian Contact Info</SectionHeading>
 
-        <FormField required label="Name" description="Please share your parent or guardian's first name">
+        <FormField
+          required
+          label="Name"
+          description="Please share your parent or guardian's first name"
+        >
           <Input required {...register('parent_name')} />
         </FormField>
 
-        <FormField required label="Email" description="Your parent/guardian's email will only be used to send them our waiver, and in case of emergency.">
-          <Input required type='email' {...register('parent_email')} />
+        <FormField
+          required
+          label="Email"
+          description="Your parent/guardian's email will only be used to send them our waiver, and in case of emergency."
+        >
+          <Input required type="email" {...register('parent_email')} />
         </FormField>
 
-        <FormField required label="Phone number" description="Your parent/guardian's phone number will only be used in case of emergency.">
-          <Input required type='tel' {...register('parent_phone')} />
+        <FormField
+          required
+          label="Phone number"
+          description="Your parent/guardian's phone number will only be used in case of emergency."
+        >
+          <Input required type="tel" {...register('parent_phone')} />
         </FormField>
 
-        <SectionHeading>Other info</SectionHeading>
+        <SectionHeading>Other</SectionHeading>
 
         <FormField label="Do you have any dietary restrictions?">
           <Input
@@ -232,7 +254,7 @@ export async function getServerSideProps(ctx: GetServerSidePropsContext) {
   try {
     await updateEmailBySecret(secret, true)
 
-    const email = censorEmail((await getEmail(secret)).fields.email)
+    const email = (await getEmail(secret)).fields.email
 
     return {
       props: {

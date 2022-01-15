@@ -4,6 +4,7 @@ import Mailgun from 'mailgun.js'
 import formData from 'form-data'
 import { ApplicationFields, createApplication, getEmail } from 'lib/data'
 import dedent from 'dedent'
+import axios from 'axios'
 
 const domain = process.env.MAILGUN_DOMAIN!
 const mg = new Mailgun(formData).client({
@@ -15,8 +16,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const { secret, data }: { secret: string, data: ApplicationFields } = req.body
-
+  const { secret, data }: { secret: string; data: ApplicationFields } = req.body
   if (!secret) return res.status(400).send('Go away')
 
   const email = await getEmail(secret)
@@ -25,21 +25,31 @@ export default async function handler(
 
   await createApplication({
     ...data,
-    email: email.fields.email,
+    email: [email.id],
   })
+
+  const name = data.name || data.legal_name.split(' ')[0]
+
+  // await axios.post(`${process.env.SENDY_URL}/subscribe`, {
+  //   api_key: process.env.SENDY_KEY,
+  //   name,
+  //   email: email.fields.email,
+  //   list: process.env.SENDY_LIST_ID
+  // })
 
   try {
     await mg.messages.create(domain, {
       from: `MAHacks <team@${domain}>`,
       to: email.fields.email,
       subject: `You're registered for MAHacks!`,
-      text: dedent`Hello ${data.name || data.legal_name.split(' ')[0]},
+      text: dedent`Hello ${name},
       
       You're now registered for MAHacks VI!
       
-      TODO`
+      TODO`,
     })
-  } finally {}
+  } finally {
+  }
 
   res.json({
     submitted: true,

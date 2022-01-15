@@ -15,12 +15,13 @@ const Home: NextPage = () => {
         <div id="sponsors">
           <Heading>Sponsors</Heading>
           <p className="text-gray-600 text-sm">
-            MAHacks is made possible by our awesome sponsors! Want to work together?{' '}
+            MAHacks is made possible by our awesome sponsors! Want to work
+            together?{' '}
             <a
-              className="font-semibold hover:underline"
+              className="font-semibold hover:underline inline-flex items-center"
               href="mailto:team@mahacks.com"
             >
-              Let&apos;s talk <BsArrowRight className="inline-block" />
+              Let&apos;s talk <BsArrowRight className="inline-block mx-1" />
             </a>
           </p>
         </div>
@@ -30,10 +31,10 @@ const Home: NextPage = () => {
           <p className="text-gray-600 text-sm">
             Have a question?{' '}
             <a
-              className="font-semibold hover:underline"
+              className="font-semibold hover:underline inline-flex items-center"
               href="mailto:team@mahacks.com"
             >
-              Contact the team <BsArrowRight className="inline-block" />
+              Contact the team <BsArrowRight className="inline-block mx-1" />
             </a>
           </p>
 

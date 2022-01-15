@@ -25,7 +25,7 @@ export const updateEmailBySecret = (secret: string, confirmed: boolean) =>
   })
 
 export interface EmailRecord {
-  // id: string
+  id: string
   fields: {
     email: string
     confirmed: string
@@ -42,7 +42,7 @@ export const getEmail = (secret: string): Promise<EmailRecord> =>
     .then((res: any) => res[0])
 
 export interface ApplicationFields {
-  email: string
+  email: string[]
   legal_name: string
   name: string
   pronouns: string
@@ -56,10 +56,11 @@ export interface ApplicationFields {
   parent_name: string
   parent_email: string
   parent_phone: string
-  hackathon_experience: boolean
+  hackathon_experience: 'none' | 'virtual' | 'in-person'
 }
 
 export interface ApplicationRecord {
+  id: string
   fields: ApplicationFields
 }
 

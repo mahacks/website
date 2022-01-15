@@ -39,7 +39,9 @@ const Person = ({ name, role, pronouns, image, link }: any) => {
 }
 
 const Grid: React.FC = ({ children }) => (
-  <div className="grid gap-5 grid-cols-3 grid-flow-col">{children}</div>
+  <div className="grid gap-5 grid-cols-1 md:grid-cols-3 grid-flow-row">
+    {children}
+  </div>
 )
 
 const Team: React.FC = () => {
