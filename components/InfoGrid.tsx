@@ -11,7 +11,7 @@ const GridCard: React.FC<{ className?: string }> = ({
   className,
 }) => {
   return (
-    <div className={clsx(className, 'bg-gray-100 p-6 rounded-3xl')}>
+    <div className={clsx(className, 'bg-gray-100 p-6 rounded-3xl flex items-center')}>
       {children}
     </div>
   )
@@ -48,31 +48,30 @@ const GridImage: React.FC<{
 const InfoGrid: React.FC = () => {
   return (
     <div className="grid grid-cols-6 grid-flow-row-dense gap-6">
-      <GridCard className="col-span-3 font-semibold">
-        MAHacks runs from March 19-20. You’ll get matched into a team based on
-        your coding experience and spend two days coding, attending workshops,
-        and more! By the end of the weekend, you’ll have built an awesome
-        project! It’s open to all high schoolers,{' '}
-        <strong>regardless of previous coding experience</strong>, at no cost.
+      <GridCard className="col-span-3 text-xl font-medium">
+        MAHacks runs from March 19-20. You’ll get matched into a team and spend 24 hours coding - or learning how - as well as attending workshops, eating food, playing games, making friends, and more!
       </GridCard>
       <GridImage
-        className="col-span-3 row-span-2"
+        className="col-span-3"
         src={Image1}
         title="Photo from MAHacks 2019 by Amogh Chaubey"
       />
       <GridImage
-        className="col-span-3"
+        className="col-span-2"
         src={Image3}
         title="Photo from MAHacks 2019 by Chris Walker"
       />
+      <GridCard className="col-span-2 text-xl font-medium">
+        By the end of the weekend, you&apos;ll have an awesome project that you&apos;ll demo with your team!
+      </GridCard>
       <GridImage
         className="col-span-2"
         src={Image4}
         title="MAHackers collaborating on their project"
       />
-      <GridCard className="col-span-3 font-semibold">
-        MAHacks is one of Boston&pos;s only
-      </GridCard>
+      {/* <GridCard className="col-span-2 text-xl font-medium">
+        Prizes will be awarded based on creativity, ingenuity, and functionality.
+      </GridCard> */}
       {/* <GridImage className="col-span-2 row-span-3" src={Image2} title="Two MAHacks 2018 attendees" /> */}
     </div>
   )

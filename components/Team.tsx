@@ -22,7 +22,7 @@ const Person = ({ name, role, pronouns, image, link }: any) => {
           <h4
             className={clsx(
               'font-bold text-lg border-b border-transparent border-dashed',
-              link && 'hover:border-secondary hover:text-secondary'
+              link && 'hover:border-primary hover:text-primary'
             )}
           >
             {name}

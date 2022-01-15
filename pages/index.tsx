@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <div id="sponsors">
           <Heading>Sponsors</Heading>
           <p className="text-gray-600 text-sm">
-            Want to work together?{' '}
+            MAHacks is made possible by our awesome sponsors! Want to work together?{' '}
             <a
               className="font-semibold hover:underline"
               href="mailto:team@mahacks.com"
