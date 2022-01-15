@@ -54,7 +54,7 @@ const Application: NextPage<ApplicationPageProps> = ({ email, secret }) => {
   }
 
   useEffect(() => {
-    const l = (e) => {
+    const l = (e: any) => {
       e.preventDefault()
       e.returnValue = ''
     }
