@@ -25,6 +25,9 @@ interface ApplicationPageProps {
   secret: string
 }
 
+        
+        const SectionHeading: React.FC = ({ children }) => <h2 className='text-xl font-semibold'>{children}</h2>
+
 const Application: NextPage<ApplicationPageProps> = ({ email, secret }) => {
   const { register, handleSubmit } = useForm<ApplicationFormData>()
   const [submitting, setSubmitting] = useState(false)
@@ -86,6 +89,8 @@ const Application: NextPage<ApplicationPageProps> = ({ email, secret }) => {
         </p>
 
         <FormField label="Email">{email}</FormField>
+
+        <SectionHeading>Your Info</SectionHeading>
 
         <FormField
           label="What's your legal name?"
@@ -151,6 +156,22 @@ const Application: NextPage<ApplicationPageProps> = ({ email, secret }) => {
           </Input>
         </FormField>
 
+        <SectionHeading>Parent/Guardian Contact Info</SectionHeading>
+
+        <FormField required label="Name" description="Please share your parent or guardian's first name">
+          <Input required {...register('parent_name')} />
+        </FormField>
+
+        <FormField required label="Email" description="Your parent/guardian's email will only be used to send them our waiver, and in case of emergency.">
+          <Input required type='email' {...register('parent_email')} />
+        </FormField>
+
+        <FormField required label="Phone number" description="Your parent/guardian's phone number will only be used in case of emergency.">
+          <Input required type='tel' {...register('parent_phone')} />
+        </FormField>
+
+        <SectionHeading>Other info</SectionHeading>
+
         <FormField label="Do you have any dietary restrictions?">
           <Input
             {...register('dietary_restrictions')}
@@ -159,7 +180,7 @@ const Application: NextPage<ApplicationPageProps> = ({ email, secret }) => {
         </FormField>
 
         <FormField
-          label="Is there anyting else we should know?"
+          label="Is there anything else we should know?"
           description="Please include any special needs, requests, questions, and anything else we should know about you."
         >
           <Input as="textarea" rows={3} {...register('comments')} />

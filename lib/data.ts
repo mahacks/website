@@ -53,6 +53,9 @@ export interface ApplicationFields {
   dietary_restrictions: string
   school: string
   graduation_year: string
+  parent_name: string
+  parent_email: string
+  parent_phone: string
 }
 
 export interface ApplicationRecord {

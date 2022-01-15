@@ -31,7 +31,6 @@ const Register: NextPage = () => {
     } catch (err) {
       console.error(err)
       setError(true)
-    } finally {
       setSubmitting(false)
     }
   }
