@@ -86,8 +86,7 @@ const Register: NextPage = () => {
         </Button>
 
         <p className="text-sm">
-          You must be a in high school to participate in MAHacks (homeschool
-          counts). If you are not currently in high school, please contact us.
+          You must be a in high school to apply here. If you are older or younger, please contact us instead.
         </p>
 
         <p className="text-xs text-gray-500">

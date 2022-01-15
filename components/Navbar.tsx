@@ -42,9 +42,10 @@ const Navbar: React.FC<{}> = ({}) => {
           </a>
         </Link>
         <div className="flex-1" />
+        <NavButton href={'/#how-it-works'}>how it works</NavButton>
         <NavButton href={'/register'}>register</NavButton>
-        <NavButton href={'#faq'}>faq</NavButton>
-        <NavButton href={'#sponsors'}>sponsors</NavButton>
+        <NavButton href={'/#faq'}>faq</NavButton>
+        <NavButton href={'/#sponsors'}>sponsors</NavButton>
         <NavButton href={'https://2019.mahacks.com/past-events'}>
           previous
         </NavButton>

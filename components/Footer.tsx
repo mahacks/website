@@ -29,6 +29,7 @@ const Footer: React.FC = () => {
         />
         <SocialButton href="https://twitter.com/ma_hacks" glyph="twitter" />
         <SocialButton href="https://github.com/mahacks" glyph="github" />
+        <SocialButton href="mailto:team@mahacks.com" glyph="email" />
       </div>
 
       <div className="flex gap-3 rounded-md p-2">

@@ -47,7 +47,7 @@ const GridImage: React.FC<{
 
 const InfoGrid: React.FC = () => {
   return (
-    <div className="grid grid-cols-6 grid-flow-row-dense gap-6">
+    <div id='how-it-works' className="pt-20 grid grid-cols-6 grid-flow-row-dense gap-6">
       <GridCard className="col-span-3 text-xl font-medium">
         MAHacks runs from March 19-20. You’ll get matched into a team and spend 24 hours coding - or learning how - as well as attending workshops, eating food, playing games, making friends, and more!
       </GridCard>

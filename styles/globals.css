@@ -16,7 +16,7 @@
   }
 
   .mdx h1 {
-    @apply text-3xl mb-8 mt-24 text-center;
+    @apply text-4xl mb-16 mt-32 text-center;
   }
   .mdx h2 {
     @apply text-2xl my-8;
@@ -26,11 +26,11 @@
   }
 
   .mdx p {
-    @apply my-2;
+    @apply my-4;
   }
 
   .mdx a {
-    @apply hover:underline decoration-wavy text-primary;
+    @apply hover:underline decoration-dotted text-primary;
   }
 
   .mdx ul {

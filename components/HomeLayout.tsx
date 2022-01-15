@@ -55,7 +55,7 @@ const HomeLayout: React.FC<{}> = ({ children }) => {
 
       <div className="h-2 w-full bg-primary" />
 
-      <div className="max-w-5xl mx-auto px-6 my-20">{children}</div>
+      <div className="max-w-5xl mx-auto px-6 mb-20">{children}</div>
 
       <Footer />
     </div>
