@@ -20,7 +20,7 @@ export const createEmail = (email: string, secret: string) =>
   })
 
 export const updateEmailBySecret = (secret: string, confirmed: boolean) =>
-  emails.updateWhere(`secret = "abc"`, {
+  emails.updateWhere(`secret = "${secret}"`, {
     confirmed,
   })
 
@@ -41,4 +41,23 @@ export const getEmail = (secret: string): Promise<EmailRecord> =>
     // .then(console.log)
     .then((res: any) => res[0])
 
-export interface ApplicationRecord {}
+export interface ApplicationFields {
+  email: string
+  legal_name: string
+  name: string
+  pronouns: string
+  coding_experience: 'none' | 'beginner' | 'intermediate' | 'advanced'
+  comments: string
+  referrer: string
+  shirt_size: 's' | 'm' | 'l' | 'xl' | 'xxl'
+  dietary_restrictions: string
+  school: string
+  graduation_year: string
+}
+
+export interface ApplicationRecord {
+  fields: ApplicationFields
+}
+
+export const createApplication = (data: ApplicationFields) =>
+  applications.create(data)

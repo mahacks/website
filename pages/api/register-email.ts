@@ -24,7 +24,7 @@ export default async function handler(
 
   await createEmail(email, verificationSecret)
 
-  mg.messages.create(domain, {
+  await mg.messages.create(domain, {
     from: `MAHacks Application <registration@${domain}>`,
     to: email,
     subject: 'Your MAHacks Registration Link',

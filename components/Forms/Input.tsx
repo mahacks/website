@@ -3,7 +3,7 @@ import { forwardRef, HTMLProps } from 'react'
 
 const Input = forwardRef<
   HTMLInputElement,
-  { as?: 'input' | 'select' } & HTMLProps<HTMLInputElement>
+  { as?: 'input' | 'select' | 'textarea' } & HTMLProps<HTMLInputElement>
 >(function InputComponent(
   { as = 'input', children, className, ...props },
   ref

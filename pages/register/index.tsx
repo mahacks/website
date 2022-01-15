@@ -7,20 +7,33 @@ import clsx from 'clsx'
 import { RiLoader4Fill } from 'react-icons/ri'
 import axios from 'axios'
 import Input from 'components/Forms/Input'
+import { useRouter } from 'next/router'
 
 const Register: NextPage = () => {
   const inputRef = useRef<HTMLInputElement>(null)
 
   const [submitting, setSubmitting] = useState(false)
+  const [error, setError] = useState(false)
+
+  const router = useRouter()
 
   const submit = async () => {
     setSubmitting(true)
+    setError(false)
 
-    const res = await axios.post('/api/register-email', {
-      email: inputRef.current?.value,
-    })
+    try {
+      const res = await axios.post('/api/register-email', {
+        email: inputRef.current?.value,
+      })
+      if (!res.data.sent) throw 'Email not sent'
 
-    setSubmitting(false)
+      router.replace('/register/sent')
+    } catch (err) {
+      console.error(err)
+      setError(true)
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -42,8 +55,20 @@ const Register: NextPage = () => {
         </p>
 
         <div>
-          <Input placeholder="wacky@mahacks.com" ref={inputRef} />
+          <Input
+            required
+            type="email"
+            placeholder="wacky@mahacks.com"
+            ref={inputRef}
+          />
         </div>
+
+        {error && (
+          <p className="text-red-500">
+            Uh-oh... Something went wrong. Try again or send an email to
+            team@mahacks.com.
+          </p>
+        )}
 
         <Button
           type="submit"
@@ -60,6 +85,16 @@ const Register: NextPage = () => {
             'Submit'
           )}
         </Button>
+
+        <p className="text-sm">
+          You must be a in high school to participate in MAHacks (homeschool
+          counts). If you are not currently in high school, please contact us.
+        </p>
+
+        <p className="text-xs text-gray-500">
+          Already submitted your application? Send an email to team@mahacks.com
+          if you need to update something.
+        </p>
       </form>
     </div>
   )

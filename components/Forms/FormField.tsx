@@ -1,10 +1,12 @@
-const FormField: React.FC<{ label: string; description?: string }> = ({
-  label,
-  description,
-  children,
-}) => (
+const FormField: React.FC<{
+  label: string
+  description?: string
+  required?: boolean
+}> = ({ label, description, children, required }) => (
   <label className="flex flex-col gap-3">
-    <span className="text-xl font-light">{label}</span>
+    <span className="text-xl font-light">
+      {label} {required && <span className="text-red-500 font-bold">*</span>}
+    </span>
     {description && (
       <span className="text-sm text-gray-500">{description}</span>
     )}
