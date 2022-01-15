@@ -1,12 +1,6 @@
 import type { NextPage } from 'next'
 import { BsArrowLeft } from 'react-icons/bs'
 import Link from 'next/link'
-import { useRef, useState } from 'react'
-import Button from 'components/Button'
-import clsx from 'clsx'
-import { RiLoader4Fill } from 'react-icons/ri'
-import axios from 'axios'
-import Input from 'components/Forms/Input'
 
 const Register: NextPage = () => {
   return (

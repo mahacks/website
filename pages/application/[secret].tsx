@@ -16,6 +16,7 @@ import { useForm, SubmitHandler } from 'react-hook-form'
 import FormField from 'components/Forms/FormField'
 import { censorEmail } from 'lib/util'
 import Input from 'components/Forms/Input'
+import { useRouter } from 'next/router'
 
 type ApplicationFormData = ApplicationFields & {}
 
@@ -27,16 +28,26 @@ interface ApplicationPageProps {
 const Application: NextPage<ApplicationPageProps> = ({ email, secret }) => {
   const { register, handleSubmit } = useForm<ApplicationFormData>()
   const [submitting, setSubmitting] = useState(false)
+  const [error, setError] = useState(false)
+  const router = useRouter()
 
   const onSubmit: SubmitHandler<ApplicationFormData> = async (data) => {
     setSubmitting(true)
+    setError(false)
 
-    const res = await axios.post('/api/application/submit', {
-      secret,
-      data,
-    })
+    try {
+      const res = await axios.post('/api/application/submit', {
+        secret,
+        data,
+      })
+      if (!res.data.submitted) throw 'Error submitting'
 
-    setSubmitting(false)
+      router.replace('/application/submitted')
+    } catch (err) {
+      console.error(err)
+      setError(true)
+      setSubmitting(false)
+    }
   }
 
   useEffect(() => {
@@ -151,7 +162,7 @@ const Application: NextPage<ApplicationPageProps> = ({ email, secret }) => {
           label="Is there anyting else we should know?"
           description="Please include any special needs, requests, questions, and anything else we should know about you."
         >
-          <Input as="textarea" rows={3} {...register('pronouns')} />
+          <Input as="textarea" rows={3} {...register('comments')} />
         </FormField>
 
         <FormField label="Finally, how did you hear about MAHacks?">
@@ -167,6 +178,12 @@ const Application: NextPage<ApplicationPageProps> = ({ email, secret }) => {
             <option value="other">Other</option>
           </Input>
         </FormField>
+
+        {error && (
+          <p className="text-lg text-red-500">
+            Oops! That wasn&apos;t saved. Please try again...
+          </p>
+        )}
 
         <Button type="submit">
           {submitting ? (
