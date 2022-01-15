@@ -24,11 +24,21 @@ const Landing: React.FC = () => {
         </div>
       </div>
 
-      <Link href="/register">
+
+<div className='flex flex-col gap-4'>
+<Link href="/register">
         <a>
           <Button>Register Now</Button>
         </a>
       </Link>
+
+{/* <Link href="/register-interest"> */}
+        <a href='https://airtable.com/shrIFLvZjtW0BJrDz' className='underline text-gray-400 text-xs'>
+          Not yet sure if you can attend? Get a reminder closer to the event.
+        </a>
+      {/* </Link> */}
+</div>
+      
     </div>
   )
 }

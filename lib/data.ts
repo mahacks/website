@@ -56,6 +56,7 @@ export interface ApplicationFields {
   parent_name: string
   parent_email: string
   parent_phone: string
+  hackathon_experience: boolean
 }
 
 export interface ApplicationRecord {
