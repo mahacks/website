@@ -5,10 +5,13 @@ import Heading from 'components/Heading'
 import { BsArrowRight } from 'react-icons/bs'
 import FAQ from 'components/FAQ.mdx'
 import Team from 'components/Team'
+import Meta from 'components/Meta'
 
 const Home: NextPage = () => {
   return (
     <HomeLayout>
+      <Meta />
+
       <div>
         <InfoGrid />
 
@@ -48,6 +51,16 @@ const Home: NextPage = () => {
 
           <Team />
         </div>
+
+        {/* <div id="previous">
+          <Heading>Previous MAHacks</Heading>
+
+          <p className=''>
+            <a href='2019.mahacks.com'>2019 Website</a>
+            <a href='https://photos.app.goo.gl/ZBZZoG9zDo5bsSj66'>2019 Photos @ Rapid7</a>
+            
+          </p>
+        </div> */}
       </div>
     </HomeLayout>
   )

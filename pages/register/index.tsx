@@ -8,6 +8,7 @@ import { RiLoader4Fill } from 'react-icons/ri'
 import axios from 'axios'
 import Input from 'components/Forms/Input'
 import { useRouter } from 'next/router'
+import Meta from 'components/Meta'
 
 const Register: NextPage = () => {
   const inputRef = useRef<HTMLInputElement>(null)
@@ -37,6 +38,11 @@ const Register: NextPage = () => {
 
   return (
     <div className="h-screen flex items-center justify-center">
+      <Meta
+        title="Register"
+        description="Register for MAHacks VI in March, 2022"
+      />
+
       <form className="p-5 m-5 bg-gray-100 rounded-xl flex flex-col gap-4 max-w-xl">
         <Link href="/">
           <a>

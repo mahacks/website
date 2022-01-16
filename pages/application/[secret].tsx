@@ -17,6 +17,7 @@ import FormField from 'components/Forms/FormField'
 import { censorEmail } from 'lib/util'
 import Input from 'components/Forms/Input'
 import { useRouter } from 'next/router'
+import Meta from 'components/Meta'
 
 type ApplicationFormData = ApplicationFields & {}
 
@@ -62,7 +63,9 @@ const Application: NextPage<{
   }, [])
 
   return (
-    <div className="min-h-screen flex flex-col p-14 items-center justify-center">
+    <div className="min-h-screen flex flex-col items-center justify-center">
+      <Meta title="Your MAHacks Application" />
+
       <form
         className="p-5 m-5 bg-gray-100 rounded-xl flex flex-col gap-9 max-w-3xl"
         onSubmit={handleSubmit(onSubmit)}

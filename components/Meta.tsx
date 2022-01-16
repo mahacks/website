@@ -9,8 +9,8 @@ const Meta: React.FC<{
   image?: string
 }> = ({
   title: pageTitle,
-  description = '(META DESCRIPTION)',
-  image = url + '/img/og/basic.jpg',
+  description = 'High schoolers: learn to code and meet new friends with 24 hours of learning, hacking, free food and prizes.',
+  image = url + '/img/og/simple.png',
   children,
 }) => {
   const title = pageTitle ? `${pageTitle} | ${name}` : name

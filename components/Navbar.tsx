@@ -29,7 +29,6 @@ const Navbar: React.FC<{}> = ({}) => {
       setMenuOpen(window.innerWidth >= 640)
     }
 
-
     scrollListener()
     resizeListener()
 
@@ -55,34 +54,45 @@ const Navbar: React.FC<{}> = ({}) => {
           isAtTop ? 'py-8' : 'py-5'
         )}
       >
-        <div className='flex items-center'>
-        <Link href={'/'}>
-          <a className='flex-grow'>
-            <div className="font-bold">MAHacks</div>
-          </a>
-        </Link>
+        <div className="flex items-center">
+          <Link href={'/'}>
+            <a className="flex-grow">
+              <div className="font-bold">MAHacks</div>
+            </a>
+          </Link>
 
-        <button className='sm:hidden'>
-          <Icon glyph='menu' size={24} onClick={() => setMenuOpen(o => !o)} />
-        </button>
+          <button className="sm:hidden">
+            <Icon
+              glyph="menu"
+              size={24}
+              onClick={() => setMenuOpen((o) => !o)}
+            />
+          </button>
         </div>
         <AnimatePresence>
           {menuOpen && (
             <>
               <div className="flex-1" />
               {Object.entries(navItems).map(([name, href]) => (
-                <motion.div key={name} initial={isMobile && {
-                  x: -40,
-                  opacity: 0,
-                  rotate: -10
-                }} animate={{
-                  x: 0,
-                  opacity: 1,
-                  rotate: 0
-                }} exit={{
-                  y: 30,
-                  opacity: 0,
-                }}>
+                <motion.div
+                  key={name}
+                  initial={
+                    isMobile && {
+                      x: -40,
+                      opacity: 0,
+                      rotate: -10,
+                    }
+                  }
+                  animate={{
+                    x: 0,
+                    opacity: 1,
+                    rotate: 0,
+                  }}
+                  exit={{
+                    y: 30,
+                    opacity: 0,
+                  }}
+                >
                   <Link href={href}>
                     <a className="font-bold">{name}</a>
                   </Link>
