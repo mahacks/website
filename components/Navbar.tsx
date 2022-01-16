@@ -32,11 +32,17 @@ const Navbar: React.FC<{}> = ({}) => {
     scrollListener()
     resizeListener()
 
+    const clickListener = () => {
+      if (isMobile) setMenuOpen(false)
+    }
+
     window.addEventListener('scroll', scrollListener)
     window.addEventListener('resize', resizeListener)
+    window.addEventListener('click', clickListener)
     return () => {
       window.removeEventListener('scroll', scrollListener)
       window.removeEventListener('resize', resizeListener)
+      window.removeEventListener('click', clickListener)
     }
   }, [])
 
@@ -61,7 +67,7 @@ const Navbar: React.FC<{}> = ({}) => {
             </a>
           </Link>
 
-          <button className="sm:hidden">
+          <button className="sm:hidden" onClick={e => e.stopPropagation()}>
             <Icon
               glyph="menu"
               size={24}

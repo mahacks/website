@@ -1,5 +1,5 @@
 const PerspectivePlane = ({}) => {
-  return (
+  return <div className="absolute w-full h-screen overflow-clip">
     <div
       style={{
         transform: 'perspective(1000px) rotateX(80deg)',
@@ -36,7 +36,7 @@ const PerspectivePlane = ({}) => {
         </svg>
       </div>
     </div>
-  )
+    </div>
 }
 
 export default PerspectivePlane
