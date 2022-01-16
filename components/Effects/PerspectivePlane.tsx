@@ -17,11 +17,21 @@ const PerspectivePlane = ({}) => {
             >
               <rect width="80" height="80" fill="url(#smallGrid)" />
               <path
+                filter="url(#glow)"
                 d="M 80 0 L 0 0 0 80"
-                className="stroke-1 fill-transparent stroke-secondary-400"
+                fill="none"
+                className="stroke-1 stroke-secondary-400"
               />
             </pattern>
           </defs>
+
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
+            <feMerge>
+              <feMergeNode in="coloredBlur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
 
           <rect width="100%" height="100%" fill="url(#grid)" />
         </svg>

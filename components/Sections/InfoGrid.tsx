@@ -91,7 +91,7 @@ const InfoGrid: React.FC = () => {
       <GridCard className="col-span-3 bg-green-100">
         {`No, we aren't "hacking" servers or bank accounts - in this context, the word hacking means building things using code. MAHacks is all about learning and collaborating to bring an idea to reality - whether it's a website, app, robot, or something else.`}
       </GridCard>
-      <GridCard className="col-span-3 bg-red-200">
+      <GridCard className="col-span-3 bg-secondary-100">
         MAHacks is completely free, and every participant will walk away with
         free swag and, hopefully, a prize!
       </GridCard>

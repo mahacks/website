@@ -114,7 +114,13 @@ const Register: NextPage = () => {
             <p className="text-center">
               We sent you an email with a link to register. If you don&apos;t
               receive it within 5 minutes, check your spam folder,{' '}
-                <a className="underline" href='#' onClick={() => setSubmitted(false)}>try again</a>
+              <a
+                className="underline"
+                href="#"
+                onClick={() => setSubmitted(false)}
+              >
+                try again
+              </a>
               , or email us at team@mahacks.com.
             </p>
           </div>
