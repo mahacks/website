@@ -33,7 +33,7 @@ const Navbar: React.FC<{}> = ({}) => {
     resizeListener()
 
     const clickListener = () => {
-      if (isMobile) setMenuOpen(false)
+      if (window.innerWidth < 640) setMenuOpen(false)
     }
 
     window.addEventListener('scroll', scrollListener)

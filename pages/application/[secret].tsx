@@ -156,18 +156,19 @@ const Application: NextPage<{
             <option value="none">I&apos;ve never written code before</option>
             <option value="beginner">Beginner</option>
             <option value="intermediate">Intermediate</option>
-            <option value="advanced">Ultra-ninja supreme supercoder</option>
+            <option value="advanced">Ultra-ninja supreme supercoder (Expert)</option>
           </Input>
         </FormField>
 
         <FormField label="Have you attended a hackathon before?">
           <Input as="select" {...register('hackathon_experience')}>
             <option hidden disabled selected value="">
-              Select an option
+              Select the first option that applies to you
             </option>
             <option value="none">No</option>
-            <option value="virtual">Yes, virtually</option>
+            <option value="mahacks">Yes, I&apos;ve attended MAHacks before</option>
             <option value="in-person">Yes, in person</option>
+            <option value="virtual">Yes, virtually</option>
           </Input>
         </FormField>
 
@@ -222,6 +223,7 @@ const Application: NextPage<{
             <option value="school">School/teacher</option>
             <option value="hack club">Hack Club</option>
             <option value="google">Google</option>
+            <option value="social media">Social media</option>
             <option value="attended before">Attended before</option>
             <option value="other">Other</option>
           </Input>
