@@ -3,7 +3,7 @@ import BackgroundImage from '../photos/landing.jpeg'
 import Navbar from './Navbar'
 import { Parallax } from 'react-scroll-parallax'
 import Landing from './Landing'
-import Footer from './Footer'
+import Footer from './Footer2'
 
 const HomeLayout: React.FC<{}> = ({ children }) => {
   return (

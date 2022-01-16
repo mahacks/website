@@ -67,7 +67,7 @@ const Navbar: React.FC<{}> = ({}) => {
             </a>
           </Link>
 
-          <button className="sm:hidden" onClick={e => e.stopPropagation()}>
+          <button className="sm:hidden" onClick={(e) => e.stopPropagation()}>
             <Icon
               glyph="menu"
               size={24}

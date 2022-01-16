@@ -40,9 +40,12 @@ const Register: NextPage = () => {
     <>
       <PerspectivePlane />
 
-      <div className="h-screen flex items-center justify-center" style={{
-        transform: 'perspective(1px)' // Safari fix
-      }}>
+      <div
+        className="h-screen flex items-center justify-center"
+        style={{
+          transform: 'perspective(1px)', // Safari fix
+        }}
+      >
         <Meta
           title="Register"
           description="Register for MAHacks VI in March, 2022"

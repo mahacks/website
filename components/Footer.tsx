@@ -40,6 +40,17 @@ const Footer: React.FC = () => {
       <p className="font-semibold">
         Copyright &copy; {new Date().getFullYear()} MAHacks.
       </p>
+
+      <div>
+        <a href="">
+          {/* eslint-disable @next/next/no-img-element */}
+          <img
+            src="/img/powered-by-vercel.svg"
+            alt="Powered By Vercel"
+            className="w-40"
+          />
+        </a>
+      </div>
       <div className="text-gray-600">
         <p>Fiscally sponsored by The Hack Foundation.</p>
         <p>Nonprofit EIN: 81-2908499</p>

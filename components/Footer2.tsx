@@ -1,0 +1,78 @@
+import Icon from '@hackclub/icons'
+import Link from 'next/link'
+
+const SocialButton = ({ glyph, href }: any) => (
+  <a target={'_blank'} rel="noreferrer" href={href}>
+    <Icon
+      glyph={glyph}
+      size={36}
+      className="hover:text-primary transition-all"
+    />
+  </a>
+)
+
+const FooterLink = ({ href, children }: any) => (
+  <Link href={href}>
+    <a className="hover:text-primary underline decoration-dotted transition-all ">
+      {children}
+    </a>
+  </Link>
+)
+
+const Footer: React.FC = () => {
+  return (
+    <div className="bg-gray-100 text-sm">
+      <div className="p-14 flex max-w-2xl mx-auto gap-6 justify-center">
+        <div className="flex-1 flex flex-col gap-3">
+          <div className="flex gap-3">
+            <SocialButton
+              href="https://www.instagram.com/ma_hacks/"
+              glyph="instagram"
+            />
+            <SocialButton href="https://twitter.com/ma_hacks" glyph="twitter" />
+            <SocialButton href="https://github.com/mahacks" glyph="github" />
+            <SocialButton href="mailto:team@mahacks.com" glyph="email" />
+          </div>
+
+          <div className="flex-1 flex flex-col gap-1">
+            <FooterLink href="/conduct">code of conduct</FooterLink>
+            <FooterLink href="https://2019.mahacks.com/">
+              2019 website
+            </FooterLink>
+          </div>
+        </div>
+        <div className="flex-1 flex flex-col gap-3">
+
+          <div>
+            <a
+              target={'_blank'}
+              rel="noreferrer"
+              href="https://vercel.com/?utm_source=mahacks&utm_campaign=oss"
+            >
+              {/* eslint-disable @next/next/no-img-element */}
+              <img
+                src="/img/powered-by-vercel.svg"
+                alt="Powered By Vercel"
+                className="w-44"
+              />
+            </a>
+          </div>
+
+        {/* <p className="font-semibold">
+        Copyright &copy; {new Date().getFullYear()} MAHacks.
+      </p> */}
+          <div className="text-gray-600">
+            <p>Fiscally sponsored by The Hack Foundation.</p>
+            <p>Nonprofit EIN: 81-2908499</p>
+          </div>
+        </div>
+      </div>
+
+      <p className="font-semibold text-center pb-4">
+        Copyright &copy; {new Date().getFullYear()} MAHacks.
+      </p>
+    </div>
+  )
+}
+
+export default Footer
