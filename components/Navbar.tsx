@@ -94,7 +94,9 @@ const Navbar: React.FC<{}> = ({}) => {
                   }}
                 >
                   <Link href={href}>
-                    <a className="font-bold">{name}</a>
+                    <a className="font-bold hover:drop-shadow-xl transition-all">
+                      {name}
+                    </a>
                   </Link>
                 </motion.div>
               ))}

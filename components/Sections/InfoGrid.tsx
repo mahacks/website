@@ -83,14 +83,23 @@ const InfoGrid: React.FC = () => {
         src={Image4}
         title="MAHackers collaborating on their project"
       />
-      <GridImage className='col-span-3' src={Image5} title='A photo from MAHacks 2018' />
+      <GridImage
+        className="col-span-3"
+        src={Image5}
+        title="A photo from MAHacks 2018"
+      />
       <GridCard className="col-span-3 bg-green-100">
         {`No, we aren't "hacking" servers or bank accounts - in this context, the word hacking means building things using code. MAHacks is all about learning and collaborating to bring an idea to reality - whether it's a website, app, robot, or something else.`}
       </GridCard>
       <GridCard className="col-span-3 bg-red-200">
-        MAHacks is completely free, and every participant will walk away with free swag and, hopefully, a prize!
+        MAHacks is completely free, and every participant will walk away with
+        free swag and, hopefully, a prize!
       </GridCard>
-      <GridImage className='col-span-3' src={Image7} title='A photo by Jolene Pern from MAHacks 2019 at Rapid7' />
+      <GridImage
+        className="col-span-3"
+        src={Image7}
+        title="A photo by Jolene Pern from MAHacks 2019 at Rapid7"
+      />
       {/* <GridCard className="col-span-2 text-xl font-medium">
         Prizes will be awarded based on creativity, ingenuity, and functionality.
       </GridCard> */}

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import BackgroundImage from '../photos/landing.jpeg'
 import Navbar from './Navbar'
 import { Parallax } from 'react-scroll-parallax'
-import Landing from './Landing2'
+import Landing from './Landing'
 import Footer from './Footer'
 
 const HomeLayout: React.FC<{}> = ({ children }) => {
@@ -48,9 +48,7 @@ const HomeLayout: React.FC<{}> = ({ children }) => {
           `}</style>
         </div>
 
-        <Parallax y={[20, -20]}>
-          <Landing />
-        </Parallax>
+        <Landing />
       </div>
 
       <div className="h-2 w-full bg-primary" />

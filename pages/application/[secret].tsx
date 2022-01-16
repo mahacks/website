@@ -63,7 +63,7 @@ const Application: NextPage<{
   }, [])
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
+    <div className="min-h-screen md:my-10 flex flex-col items-center justify-center">
       <Meta title="Your MAHacks Application" />
 
       <form
@@ -89,7 +89,7 @@ const Application: NextPage<{
           <a className="text-primary-400" target={'_blank'} href="/#faq">
             FAQ
           </a>{' '}
-          if you have any questions..
+          if you have any questions.
         </p>
 
         <FormField label="Email">{email}</FormField>

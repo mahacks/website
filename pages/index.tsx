@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import HomeLayout from 'components/HomeLayout'
-import InfoGrid from 'components/InfoGrid'
+import InfoGrid from 'components/Sections/InfoGrid'
 import Heading from 'components/Heading'
 import { BsArrowRight } from 'react-icons/bs'
-import FAQ from 'components/FAQ.mdx'
-import Team from 'components/Team'
+import FAQ from 'components/Sections/FAQ.mdx'
+import Team from 'components/Sections/Team'
 import Meta from 'components/Meta'
 
 const Home: NextPage = () => {
