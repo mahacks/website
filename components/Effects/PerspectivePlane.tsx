@@ -1,5 +1,5 @@
 const PerspectivePlane = ({}) => {
-  return <div className="absolute max-w-screen h-screen overflow-clip">
+  return <div className="absolute w-full max-w-screen h-screen overflow-clip">
     <div
       style={{
         transform: 'perspective(1000px) rotateX(80deg)',
