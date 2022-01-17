@@ -38,11 +38,11 @@ const Navbar: React.FC<{}> = ({}) => {
 
     window.addEventListener('scroll', scrollListener)
     window.addEventListener('resize', resizeListener)
-    window.addEventListener('click', clickListener)
+    window.addEventListener('touchend', clickListener)
     return () => {
       window.removeEventListener('scroll', scrollListener)
       window.removeEventListener('resize', resizeListener)
-      window.removeEventListener('click', clickListener)
+      window.removeEventListener('touchend', clickListener)
     }
   }, [])
 
