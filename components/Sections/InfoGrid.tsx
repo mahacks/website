@@ -17,7 +17,7 @@ const GridCard: React.FC<{ className?: string }> = ({
     <div
       className={clsx(
         className,
-        'bg-gray-100 p-6 rounded-3xl flex items-center text-xl font-medium'
+        'bg-opacity-25 p-6 rounded-3xl flex items-center text-xl font-medium'
       )}
     >
       {children}
@@ -59,7 +59,7 @@ const InfoGrid: React.FC = () => {
       id="how-it-works"
       className="pt-20 flex flex-col sm:grid grid-cols-6 grid-flow-row-dense gap-6"
     >
-      <GridCard className="col-span-3 bg-primary-100">
+      <GridCard className="col-span-3 bg-accent-red">
         MAHacks runs from March 19-20. You’ll get matched into a team and spend
         24 hours coding - or learning how - as well as attending workshops,
         eating food, playing games, making friends, and more!
@@ -74,7 +74,7 @@ const InfoGrid: React.FC = () => {
         src={Image3}
         title="Photo from MAHacks 2019 by Chris Walker"
       />
-      <GridCard className="col-span-2 bg-yellow-200">
+      <GridCard className="col-span-2 bg-accent-orange">
         By the end of the weekend, you&apos;ll have an awesome project that
         you&apos;ll demo with your team!
       </GridCard>
@@ -88,10 +88,10 @@ const InfoGrid: React.FC = () => {
         src={Image5}
         title="A photo from MAHacks 2018"
       />
-      <GridCard className="col-span-3 bg-green-100">
+      <GridCard className="col-span-3 bg-accent-blue">
         {`No, we aren't "hacking" servers or bank accounts - in this context, the word hacking means building things using code. MAHacks is all about learning and collaborating to bring an idea to reality - whether it's a website, app, robot, or something else.`}
       </GridCard>
-      <GridCard className="col-span-3 bg-secondary-100">
+      <GridCard className="col-span-3 bg-accent-green">
         MAHacks is completely free, and every participant will walk away with
         free swag and, hopefully, a prize!
       </GridCard>

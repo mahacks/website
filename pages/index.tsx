@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
         <div id="sponsors">
           <Heading>Sponsors</Heading>
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-400 text-sm">
             MAHacks is made possible by our awesome sponsors! Want to work
             together?{' '}
             <a
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
 
         <div id="faq">
           <Heading>FAQ</Heading>
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-400 text-sm">
             Have a question?{' '}
             <a
               className="font-semibold hover:underline inline-flex items-center"
@@ -41,7 +41,7 @@ const Home: NextPage = () => {
             </a>
           </p>
 
-          <div className="p-6 rounded-2xl bg-gray-100 my-4 mdx">
+          <div className="p-6 rounded-2xl bg-bg-card my-4 mdx">
             <FAQ />
           </div>
         </div>

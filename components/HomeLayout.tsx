@@ -38,7 +38,7 @@ const HomeLayout: React.FC<{}> = ({ children }) => {
               left: 0;
               width: 100%;
               height: 100%;
-              background: white;
+              background: black;
               opacity: 0.9;
             }
 

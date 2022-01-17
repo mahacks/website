@@ -52,7 +52,7 @@ const Register: NextPage = () => {
         />
 
         {!submitted && (
-          <form className="p-5 m-5 bg-gray-100 z-10 rounded-xl flex flex-col gap-4 max-w-xl">
+          <form className="p-5 m-5 bg-bg-card z-10 rounded-xl flex flex-col gap-4 max-w-xl">
             <Link href="/">
               <a>
                 <span className="flex gap-1 items-center font-semibold">
@@ -105,7 +105,7 @@ const Register: NextPage = () => {
               younger, please contact us instead.
             </p>
 
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-gray-400">
               Already submitted your application? Send an email to
               team@mahacks.com if you need to update something.
             </p>

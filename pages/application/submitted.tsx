@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Submitted: NextPage = () => {
   return (
-    <div className="h-screen bg-gradient-to-br from-secondary to-primary flex justify-center items-center gap-4">
+    <div className="h-screen bg-gradient-to-br from-accent-red to-accent-blue flex justify-center items-center gap-4">
       <div className="text-center p-8 bg-white bg-opacity-70 text-black rounded-xl">
         <h2 className="text-5xl font-semibold mb-16">
           🥳 Yay! You&apos;re registered for MAHacks!

@@ -67,14 +67,14 @@ const Application: NextPage<{
       <Meta title="Your MAHacks Application" />
 
       <form
-        className="p-5 m-5 bg-gray-100 rounded-xl flex flex-col gap-9 max-w-3xl"
+        className="p-5 m-5 bg-bg-card rounded-xl flex flex-col gap-9 max-w-3xl"
         onSubmit={handleSubmit(onSubmit)}
       >
         {/* eslint-disable @next/next/no-html-link-for-pages */}
         <a
           href="/"
           target={'_blank'}
-          className="text-sm text-gray-600 font-semibold flex gap-1 items-center justify-center"
+          className="text-sm text-gray-400 font-semibold flex gap-1 items-center justify-center"
         >
           MAHacks <Icon glyph="external-fill" size={24} />
         </a>

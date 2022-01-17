@@ -3,6 +3,7 @@ import Router from 'next/router'
 import NProgress from 'nprogress'
 import '../styles/nprogress.css'
 import '../styles/globals.css'
+import '../styles/fonts.css'
 import { ParallaxProvider } from 'react-scroll-parallax'
 
 NProgress.configure({

@@ -21,7 +21,7 @@ const FooterLink = ({ href, children }: any) => (
 
 const Footer: React.FC = () => {
   return (
-    <div className="bg-gray-100 text-sm">
+    <div className="bg-bg-card text-sm">
       <div className="p-14 flex flex-col sm:flex-row max-w-2xl mx-auto gap-6 justify-center">
         <div className="flex-1 flex flex-col gap-3">
           <div className="flex gap-3">
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
         {/* <p className="font-semibold">
         Copyright &copy; {new Date().getFullYear()} MAHacks.
       </p> */}
-          <div className="text-gray-600">
+          <div className="text-gray-300">
             <p>Fiscally sponsored by The Hack Foundation.</p>
             <p>Nonprofit EIN: 81-2908499</p>
           </div>

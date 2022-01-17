@@ -20,7 +20,7 @@ const PerspectivePlane = ({}) => {
                   filter="url(#glow)"
                   d="M 40 0 L 0 0 0 40"
                   fill="none"
-                  className="stroke-1 stroke-secondary-400"
+                  className="stroke-1 stroke-accent-blue"
                 />
               </pattern>
             </defs>

@@ -4,7 +4,11 @@
 
 @layer base {
   html {
-    @apply font-primary;
+    @apply font-primary text-text;
+  }
+
+  body {
+    @apply bg-bg;
   }
 
   h1,h2,h3,h4,h5,h6 {

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useLayoutEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Icon from '@hackclub/icons'
+import Logo from './Logo'
 
 const navItems = {
   'how it works': '/#how-it-works',
@@ -49,21 +50,22 @@ const Navbar: React.FC<{}> = ({}) => {
   return (
     <div
       className={clsx(
-        'fixed top-0 w-full z-40 transition-all bg-opacity-90',
-        !isAtTop && 'border-b bg-white',
+        'fixed top-0 w-full z-40 transition-all bg-opacity-90 border-gray-800',
+        !isAtTop && 'border-b bg-bg',
         isAtTop && menuOpen && 'bg-white sm:bg-transparent'
       )}
     >
       <div
         className={clsx(
-          'flex flex-col sm:flex-row gap-3 md:gap-7 max-w-6xl mx-auto px-8 transition-all',
-          isAtTop ? 'py-8' : 'py-5'
+          'flex flex-col sm:flex-row items-center gap-3 md:gap-7 max-w-6xl mx-auto px-8 transition-all',
+          isAtTop ? 'py-6' : 'py-3'
         )}
       >
         <div className="flex items-center">
-          <Link href={'/'}>
+          <Link href={'/#'}>
             <a className="flex-grow">
-              <div className="font-bold">MAHacks</div>
+              {/* <div className="font-bold">MAHacks</div> */}
+              <Logo />
             </a>
           </Link>
 

@@ -5,6 +5,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        bg: {
+          DEFAULT: '#000',
+          card: '#111827',
+          input: '#374151'
+        },
+        text: {
+          DEFAULT: '#fff',
+        },
         primary: {
           DEFAULT: '#B268FF',
           faded: '#985CD688',
@@ -20,25 +28,28 @@ module.exports = {
           700: '#924BC6',
           800: '#8741B3',
         },
-        secondary: {
-          DEFAULT: '#00CDF5',
-          faded: '#5CC2D688',
-
-          // https://hihayk.github.io/scale/#4/4/30/80/-5/5/20/14/00CDF5/0/205/245/white
-          50: '#CCFDFF',
-          100: '#99F7FF',
-          200: '#66EDFF',
-          300: '#33DFFC',
-          400: '#00CDF5',
-          500: '#00BBE7',
-          600: '#00AAD8',
-          700: '#0099C6',
-          800: '#0087B3',
-        }
+        accent: {
+          red: '#FF0000',
+          green: '#008000',
+          blue: '#118DF0',
+          orange: '#FFA500'
+        },
       },
       fontFamily: {
-        primary: ['"DM Sans"', 'sans-serif'], // or Fira Sans?
-        heading: ['"Outfit"', 'sans-serif'], // DM Sans, Be Vietnam Pro, Roboto Slab, Outfit
+        primary: ['"Outfit"', 'sans-serif'], // or Fira Sans?
+        brand: ['"HELLO DENVER DISPLAY"', 'Outfit', 'sans-serif'],
+        'logo-exponent': ['Quark', 'sans-serif'],
+        heading: ['"Inter"', 'sans-serif'], // DM Sans, Be Vietnam Pro, Roboto Slab, Outfit
+      },
+      dropShadow: {
+        'glow-white': '0px 0px 8px rgba(255, 255, 255, 0.6)',
+        // 'glow-red': '0px 0px 8px rgba(255, 0, 0, 0.8)',
+        // 'glow-green': '0px 0px 8px rgba(0, 128, 0, 0.8)',
+        // 'glow-blue': '0px 0px 8px rgba(17, 141, 240, 0.8)',
+        // 'glow-orange': '0px 0px 8px rgba(255, 165, 0, 0.8)',
+      },
+      boxShadow: {
+        'glow': '0px 0px 8px rgba(255, 255, 255, 0.6)',
       },
       animation: {
         'moving-bg': 'movingBackground 6s ease infinite',
