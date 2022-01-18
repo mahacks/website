@@ -1,9 +1,32 @@
 import Icon from '@hackclub/icons'
 import clsx from 'clsx'
+import Heading from 'components/Heading'
 import Image from 'next/image'
 import Benjamin from 'photos/team/benjamin2.png'
 import Claire from 'photos/team/claire.png'
 import Kunal from 'photos/team/kunal.jpeg'
+
+const alumni = [
+  'Jolene Pern',
+  'Vicki Yang',
+  'Jonathan Yin',
+  'Kunal Sharda',
+  'Matt Tengtrakool',
+  'Michelle Yu',
+  'Jocelyn Pern',
+  'Justin Yu',
+  'Max Krieger',
+  'Edward Song',
+  'Nimish Garg',
+  'Jennifer Kim',
+  'Katherine Huang',
+  'Emily Tan',
+  'Walter Shen',
+  'Zhi Wei Gan',
+  'Rebekah Agwunobi',
+  'Aadhya Puttur',
+  'Nina Zhang'
+]
 
 const Person = ({ name, role, pronouns, image, link }: any) => {
   return (
@@ -45,7 +68,7 @@ const Grid: React.FC = ({ children }) => (
 )
 
 const Team: React.FC = () => {
-  return (
+  return <>
     <Grid>
       <Person
         name="Kunal Botla"
@@ -66,8 +89,20 @@ const Team: React.FC = () => {
         image={Benjamin}
         // link='https://benjaminashbaugh.me'
       />
+      <Person
+        name="Theo Bleir"
+        role="Advisor"
+        pronouns="he/him"
+        image={Kunal}
+        // link='https://benjaminashbaugh.me'
+      />
     </Grid>
-  )
+
+    <Heading>Alumni</Heading>
+    <ul>
+    {alumni.map((name, i) => <li key={i} className='inline'>{name} {i !== alumni.length - 1 && <>&bull;</>} </li>)}
+    </ul>
+    </>
 }
 
 export default Team

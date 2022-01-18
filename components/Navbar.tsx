@@ -52,24 +52,25 @@ const Navbar: React.FC<{}> = ({}) => {
       className={clsx(
         'fixed top-0 w-full z-40 transition-all bg-opacity-90 border-gray-800',
         !isAtTop && 'border-b bg-bg',
-        isAtTop && menuOpen && 'bg-white sm:bg-transparent'
+        isAtTop && menuOpen && 'bg-bg sm:bg-transparent'
       )}
     >
       <div
         className={clsx(
-          'flex flex-col sm:flex-row items-center gap-3 md:gap-7 max-w-6xl mx-auto px-8 transition-all',
+          'flex flex-col sm:flex-row sm:items-center gap-3 md:gap-7 max-w-6xl mx-auto px-8 transition-all',
           isAtTop ? 'py-6' : 'py-3'
         )}
       >
         <div className="flex items-center">
           <Link href={'/#'}>
-            <a className="flex-grow">
-              {/* <div className="font-bold">MAHacks</div> */}
+            <a>
               <Logo />
             </a>
           </Link>
 
-          <button className="sm:hidden" onClick={(e) => e.stopPropagation()}>
+          <div className='flex-grow' />
+
+          <button className="sm:hidden" onTouchEnd={(e) => e.stopPropagation()}>
             <Icon
               glyph="menu"
               size={24}

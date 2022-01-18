@@ -113,7 +113,7 @@ const Register: NextPage = () => {
         )}
 
         {submitted && (
-          <div className="p-5 m-5 bg-gray-100 z-10 rounded-xl flex flex-col gap-4 max-w-xl text-center">
+          <div className="p-5 m-5 bg-bg-card z-10 rounded-xl flex flex-col gap-4 max-w-xl text-center">
             <h1 className="text-2xl">📬 Check Your Inbox 💌</h1>
 
             <p className="text-center">

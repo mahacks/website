@@ -1,0 +1,14 @@
+{
+    "name": "MAHacks",
+    "short_name": "MAHacks",
+    "icons": [
+        {
+            "src": "/favicon/android-chrome-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone"
+}

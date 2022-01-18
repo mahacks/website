@@ -17,7 +17,7 @@ const GridCard: React.FC<{ className?: string }> = ({
     <div
       className={clsx(
         className,
-        'bg-opacity-25 p-6 rounded-3xl flex items-center text-xl font-medium'
+        'bg-opacity-10 p-6 rounded-3xl flex items-center text-xl font-medium'
       )}
     >
       {children}
