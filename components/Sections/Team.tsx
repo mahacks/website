@@ -2,9 +2,10 @@ import Icon from '@hackclub/icons'
 import clsx from 'clsx'
 import Heading from 'components/Heading'
 import Image from 'next/image'
-import Benjamin from 'photos/team/benjamin2.png'
+import Benjamin from 'photos/team/benjamin.png'
 import Claire from 'photos/team/claire.png'
 import Kunal from 'photos/team/kunal.jpeg'
+import Theo from 'photos/team/theo.png'
 
 const alumni = [
   'Jolene Pern',
@@ -78,12 +79,6 @@ const Team: React.FC = () => {
           image={Kunal}
         />
         <Person
-          name="Claire Wang"
-          role="Organizer"
-          pronouns="she/her"
-          image={Claire}
-        />
-        <Person
           name="Benjamin Ashbaugh"
           role="Organizer"
           pronouns="he/him"
@@ -91,10 +86,16 @@ const Team: React.FC = () => {
           // link='https://benjaminashbaugh.me'
         />
         <Person
+          name="Claire Wang"
+          role="Organizer"
+          pronouns="she/her"
+          image={Claire}
+        />
+        <Person
           name="Theo Bleir"
           role="Advisor"
           pronouns="he/him"
-          image={Kunal}
+          image={Theo}
           // link='https://benjaminashbaugh.me'
         />
       </Grid>

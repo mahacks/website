@@ -54,6 +54,9 @@ module.exports = {
       animation: {
         'moving-bg': 'movingBackground 6s ease infinite',
         'slow-panning': 'infinitePanning 400s linear infinite',
+        'slow-spin': 'spin 10s linear infinite',
+        'slow-spin-reverse': 'spin 10s linear infinite reverse',
+        'slow-slide': 'moveUp 90s linear infinite',
       },
       keyframes: {
         movingBackground: {
@@ -65,6 +68,10 @@ module.exports = {
           '0%': {transform: 'translateX(-50%)'},
           // '50%':{transform: 'translateX(0%)'},
           '100%':{transform: 'translateX(0%)'}
+        },
+        moveUp: {
+          '0%': {transform: 'translateY(%)'},
+          '100%': {transform: 'translateY(-100%)'},
         }
       },
       backgroundSize: {

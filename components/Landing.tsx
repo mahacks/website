@@ -6,11 +6,13 @@ import {
 } from 'react-icons/hi'
 import { Parallax } from 'react-scroll-parallax'
 import Button from './Button'
+import ShapeRain from './Effects/ShapeRain'
 import Logo from './Logo'
 
 const Landing: React.FC = () => {
   return (
-    <div className="">
+    <div>
+      <ShapeRain count={10} />
       <Parallax y={[20, -20]}>
         <div className="px-3 max-w-3xl mx-auto h-screen flex flex-col gap-6 sm:gap-10 justify-center">
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-brand font-bold text-transparent bg-clip-text bg-text drop-shadow-glow-white">
