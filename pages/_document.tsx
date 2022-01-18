@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 const googleFontFamilies: string[] = [
   'DM+Sans:ital,wght@0,400;0,500;0,700;1,400',
   'Outfit:wght@400;600;700;800',
-  'Inter:wght@300;400;600;700;800'
+  'Inter:wght@300;400;600;700;800',
 ]
 
 class MyDocument extends Document {

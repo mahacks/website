@@ -42,7 +42,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="flex-1 flex flex-col gap-3">
-
           <div>
             <a
               target={'_blank'}
@@ -58,7 +57,7 @@ const Footer: React.FC = () => {
             </a>
           </div>
 
-        {/* <p className="font-semibold">
+          {/* <p className="font-semibold">
         Copyright &copy; {new Date().getFullYear()} MAHacks.
       </p> */}
           <div className="text-gray-300">

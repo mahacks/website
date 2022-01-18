@@ -25,7 +25,7 @@ const alumni = [
   'Zhi Wei Gan',
   'Rebekah Agwunobi',
   'Aadhya Puttur',
-  'Nina Zhang'
+  'Nina Zhang',
 ]
 
 const Person = ({ name, role, pronouns, image, link }: any) => {
@@ -68,41 +68,49 @@ const Grid: React.FC = ({ children }) => (
 )
 
 const Team: React.FC = () => {
-  return <>
-    <Grid>
-      <Person
-        name="Kunal Botla"
-        role="Organizer"
-        pronouns="he/him"
-        image={Kunal}
-      />
-      <Person
-        name="Claire Wang"
-        role="Organizer"
-        pronouns="she/her"
-        image={Claire}
-      />
-      <Person
-        name="Benjamin Ashbaugh"
-        role="Organizer"
-        pronouns="he/him"
-        image={Benjamin}
-        // link='https://benjaminashbaugh.me'
-      />
-      <Person
-        name="Theo Bleir"
-        role="Advisor"
-        pronouns="he/him"
-        image={Kunal}
-        // link='https://benjaminashbaugh.me'
-      />
-    </Grid>
+  return (
+    <>
+      <Grid>
+        <Person
+          name="Kunal Botla"
+          role="Organizer"
+          pronouns="he/him"
+          image={Kunal}
+        />
+        <Person
+          name="Claire Wang"
+          role="Organizer"
+          pronouns="she/her"
+          image={Claire}
+        />
+        <Person
+          name="Benjamin Ashbaugh"
+          role="Organizer"
+          pronouns="he/him"
+          image={Benjamin}
+          // link='https://benjaminashbaugh.me'
+        />
+        <Person
+          name="Theo Bleir"
+          role="Advisor"
+          pronouns="he/him"
+          image={Kunal}
+          // link='https://benjaminashbaugh.me'
+        />
+      </Grid>
 
-    <Heading>Alumni</Heading>
-    <ul>
-    {alumni.map((name, i) => <li key={i} className='inline'>{name} {i !== alumni.length - 1 && <>&bull;</>} </li>)}
-    </ul>
+      <Heading as="h3" small>
+        Alumni
+      </Heading>
+      <ul>
+        {alumni.map((name, i) => (
+          <li key={i} className="inline">
+            {name} {i !== alumni.length - 1 && <>&bull;</>}{' '}
+          </li>
+        ))}
+      </ul>
     </>
+  )
 }
 
 export default Team

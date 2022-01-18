@@ -1,10 +1,21 @@
 import clsx from 'clsx'
 
-const Heading: React.FC<{ className?: string }> = ({ children, className }) => {
+const Heading: React.FC<{
+  className?: string
+  as?: string
+  small?: boolean
+}> = ({ children, as = 'h2', className, small }) => {
+  const Comp: any = as
   return (
-    <h2 className={clsx(className, 'text-4xl font-bold pt-20 mb-8')}>
+    <Comp
+      className={clsx(
+        className,
+        'font-bold pt-20 mb-8',
+        small ? 'text-3xl' : 'text-4xl'
+      )}
+    >
       {children}
-    </h2>
+    </Comp>
   )
 }
 

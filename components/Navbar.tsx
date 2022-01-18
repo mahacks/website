@@ -68,7 +68,7 @@ const Navbar: React.FC<{}> = ({}) => {
             </a>
           </Link>
 
-          <div className='flex-grow' />
+          <div className="flex-grow" />
 
           <button className="sm:hidden" onTouchEnd={(e) => e.stopPropagation()}>
             <Icon

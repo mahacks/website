@@ -156,7 +156,9 @@ const Application: NextPage<{
             <option value="none">I&apos;ve never written code before</option>
             <option value="beginner">Beginner</option>
             <option value="intermediate">Intermediate</option>
-            <option value="advanced">Ultra-ninja supreme supercoder (Expert)</option>
+            <option value="advanced">
+              Ultra-ninja supreme supercoder (Expert)
+            </option>
           </Input>
         </FormField>
 
@@ -166,7 +168,9 @@ const Application: NextPage<{
               Select the first option that applies to you
             </option>
             <option value="none">No</option>
-            <option value="mahacks">Yes, I&apos;ve attended MAHacks before</option>
+            <option value="mahacks">
+              Yes, I&apos;ve attended MAHacks before
+            </option>
             <option value="in-person">Yes, in person</option>
             <option value="virtual">Yes, virtually</option>
           </Input>

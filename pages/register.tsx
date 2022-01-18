@@ -101,7 +101,7 @@ const Register: NextPage = () => {
             </Button>
 
             <p className="text-sm">
-              You must be a in high school to apply here. If you are older or
+              You must be in high school to apply here. If you are older or
               younger, please contact us instead.
             </p>
 

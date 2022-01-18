@@ -39,7 +39,7 @@ const HomeLayout: React.FC<{}> = ({ children }) => {
               width: 100%;
               height: 100%;
               background: black;
-              opacity: 0.9;
+              opacity: 0.85;
             }
 
             .landing-bg-img-container > span {
