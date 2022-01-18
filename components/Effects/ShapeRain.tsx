@@ -29,8 +29,8 @@ const ShapeRain: React.FC<{
   return (
     <div className="absolute h-full w-full overflow-hidden">
       <div className="absolute h-[200%] w-full animate-slow-slide">
-        <div className='relative h-full'>{shapes}</div>
-        <div className='relative h-full'>{shapes}</div>
+        <div className="relative h-full">{shapes}</div>
+        <div className="relative h-full">{shapes}</div>
       </div>
     </div>
   )

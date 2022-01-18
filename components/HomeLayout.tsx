@@ -14,7 +14,7 @@ const HomeLayout: React.FC<{}> = ({ children }) => {
           <Image
             layout="responsive"
             src={BackgroundImage}
-            alt="Hack Clubbers gather at the SpaceX HQ"
+            alt="Hackers work on their projects at MAHacks 2019"
             priority
             quality={30}
             objectFit="cover"

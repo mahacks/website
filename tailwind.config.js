@@ -50,6 +50,7 @@ module.exports = {
       },
       boxShadow: {
         'glow': '0px 0px 8px rgba(255, 255, 255, 0.6)',
+        'glow-lg': '0px 0px 12px rgba(255, 255, 255, 0.6)',
       },
       animation: {
         'moving-bg': 'movingBackground 6s ease infinite',
@@ -72,7 +73,18 @@ module.exports = {
         moveUp: {
           '0%': {transform: 'translateY(%)'},
           '100%': {transform: 'translateY(-100%)'},
-        }
+        },
+        // glowPulse: {
+        //   from: {
+        //     boxShadow: '0px 0px 8px var(--tw-shadow-color)'
+        //   },
+        //   '50%': {
+        //     boxShadow: '0px 0px 12px var(--tw-shadow-color)'
+        //   },
+        //   '100%': {
+        //     boxShadow: '0px 0px 8px var(--tw-shadow-color)'
+        //   }
+        // }
       },
       backgroundSize: {
         'oversize': '200% 200%'

@@ -7,4 +7,5 @@ export const censorEmail = (email: string) => {
   return censorWord(arr[0]) + '@' + censorWord(arr[1])
 }
 
-export const selectRandom = <T>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)]
+export const selectRandom = <T>(arr: T[]): T =>
+  arr[Math.floor(Math.random() * arr.length)]

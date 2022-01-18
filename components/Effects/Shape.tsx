@@ -43,7 +43,10 @@ const Shape: React.FC<{
       />
     ),
     blue: (
-      <feColorMatrix type="matrix" values="0 0 0 0 0.0666667 0 0 0 0 0.552941 0 0 0 0 0.941176 0 0 0 0.8 0"/>
+      <feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0.0666667 0 0 0 0 0.552941 0 0 0 0 0.941176 0 0 0 0.8 0"
+      />
     ),
     green: (
       <feColorMatrix
@@ -69,7 +72,7 @@ const Shape: React.FC<{
           blue: 'stroke-accent-blue',
         }[color],
         'animate-slow-spin',
-        reverseAnimation && 'animate-slow-spin-reverse',
+        reverseAnimation && 'animate-slow-spin-reverse'
       )}
     >
       <g filter={`url(#shape_filter_${id})`}>{shape}</g>

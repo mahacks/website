@@ -6,6 +6,7 @@ import Benjamin from 'photos/team/benjamin.png'
 import Claire from 'photos/team/claire.png'
 import Kunal from 'photos/team/kunal.jpeg'
 import Theo from 'photos/team/theo.png'
+import Sarthak from 'photos/team/sarthak.png'
 
 const alumni = [
   'Jolene Pern',
@@ -74,20 +75,20 @@ const Team: React.FC = () => {
       <Grid>
         <Person
           name="Kunal Botla"
-          role="Organizer"
+          role="Lead Organizer"
           pronouns="he/him"
           image={Kunal}
         />
         <Person
           name="Benjamin Ashbaugh"
-          role="Organizer"
+          role="Design + Development"
           pronouns="he/him"
           image={Benjamin}
           // link='https://benjaminashbaugh.me'
         />
         <Person
           name="Claire Wang"
-          role="Organizer"
+          role="Logistics"
           pronouns="she/her"
           image={Claire}
         />
@@ -97,6 +98,12 @@ const Team: React.FC = () => {
           pronouns="he/him"
           image={Theo}
           // link='https://benjaminashbaugh.me'
+        />
+        <Person
+          name="Sarthak Mohanty"
+          role="Design Advisor"
+          pronouns="he/him"
+          image={Sarthak}
         />
       </Grid>
 

@@ -14,17 +14,22 @@ const Landing: React.FC = () => {
     <div>
       <ShapeRain count={10} />
       <Parallax y={[20, -20]}>
-        <div className="px-3 max-w-3xl mx-auto h-screen flex flex-col gap-6 sm:gap-10 justify-center">
-          <h1 className="text-6xl sm:text-7xl md:text-8xl font-brand font-bold text-transparent bg-clip-text bg-text drop-shadow-glow-white">
-            MAHACKS VI
-          </h1>
+        <div className="px-3 max-w-3xl mx-auto h-screen flex flex-col items-start gap-6 sm:gap-10 justify-center">
+          <div>
+            <h1 className="text-6xl sm:text-7xl md:text-8xl font-brand font-bold text-transparent bg-clip-text bg-text drop-shadow-glow-white">
+              MAHACKS VI
+            </h1>
+            {/* <div className="text-xl font-semibold font-heading">
+              March 19-20 @ Boston, MA
+            </div> */}
+          </div>
 
           <p className="sm:text-xl font-bold max-w-xl">
             High schoolers: learn to code and meet new friends with 24 hours of
             learning, hacking, free food and prizes.
           </p>
 
-          <div className="flex gap-3 font-semibold">
+          <div className="flex gap-3 font-semibold text-xl">
             <div className="flex items-center">
               <HiOutlineLocationMarker
                 className="inline-block mx-2"
@@ -41,7 +46,7 @@ const Landing: React.FC = () => {
           <div className="flex flex-col gap-4">
             <Link href="/register">
               <a>
-                <Button>Register Now</Button>
+                <Button glow>Register Now</Button>
               </a>
             </Link>
 

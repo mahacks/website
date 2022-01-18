@@ -10,8 +10,8 @@ const Heading: React.FC<{
     <Comp
       className={clsx(
         className,
-        'font-bold pt-20 mb-8',
-        small ? 'text-3xl' : 'text-4xl'
+        'font-bold mb-8',
+        small ? 'text-2xl pt-12' : 'text-4xl pt-20'
       )}
     >
       {children}

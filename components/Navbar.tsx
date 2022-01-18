@@ -62,7 +62,7 @@ const Navbar: React.FC<{}> = ({}) => {
         )}
       >
         <div className="flex items-center">
-          <Link href={'/#'}>
+          <Link href={'/#'} scroll={true}>
             <a>
               <Logo />
             </a>
