@@ -18,7 +18,7 @@ const GridCard: React.FC<{ className?: string }> = ({
     <div
       className={clsx(
         className,
-        'bg-opacity-20 p-6 rounded-3xl flex items-center text-xl font-medium'
+        'bg-gray-800 bg-opacity-50 p-6 rounded-3xl flex items-center text-xl font-medium border-2 shadow-glow'
       )}
     >
       {children}
@@ -60,22 +60,22 @@ const InfoGrid: React.FC = () => {
       id="how-it-works"
       className="pt-20 flex flex-col sm:grid grid-cols-6 grid-flow-row-dense gap-6"
     >
-      <GridCard className="col-span-3 bg-accent-red">
+      <GridCard className="col-span-3 border-accent-blue shadow-accent-blue">
         MAHacks runs from March 19-20. You’ll get matched into a team and spend
         24 hours coding - or learning how - as well as attending workshops,
         eating food, playing games, making friends, and more!
       </GridCard>
       <GridImage
         className="col-span-3"
-        src={Image1}
+        src={Image3}
         title="Photo from MAHacks 2019 by Amogh Chaubey"
       />
       <GridImage
         className="col-span-2"
-        src={Image3}
+        src={Image1}
         title="Photo from MAHacks 2019 by Chris Walker"
       />
-      <GridCard className="col-span-2 bg-accent-orange">
+      <GridCard className="col-span-2 border-accent-green shadow-accent-green">
         By the end of the weekend, you&apos;ll have an awesome project that
         you&apos;ll demo with your team!
       </GridCard>
@@ -89,10 +89,10 @@ const InfoGrid: React.FC = () => {
         src={Image8}
         title="A photo from Jolene Pern from MAHacks 2019"
       />
-      <GridCard className="col-span-3 bg-accent-blue">
+      <GridCard className="col-span-3 border-accent-red shadow-accent-red">
         {`No, we aren't "hacking" servers or bank accounts - in this context, the word hacking means building things using code. MAHacks is all about learning and collaborating to bring an idea to reality - whether it's a website, app, robot, or something else.`}
       </GridCard>
-      <GridCard className="col-span-3 bg-accent-green">
+      <GridCard className="col-span-3 border-accent-orange shadow-accent-orange">
         MAHacks is completely free, and every participant will walk away with
         free swag and, hopefully, a prize!
       </GridCard>
