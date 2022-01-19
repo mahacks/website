@@ -8,6 +8,7 @@ import Image4 from 'photos/1.jpeg'
 import Image5 from 'photos/2018/IMG_0889.jpeg'
 import Image6 from 'photos/2018/8013E4DC-CB5C-4ACB-BAD5-4250F0252F33.jpeg'
 import Image7 from 'photos/2019/20191027_111544.jpeg'
+import Image8 from 'photos/2019/20191026_151133.jpeg'
 
 const GridCard: React.FC<{ className?: string }> = ({
   children,
@@ -85,8 +86,8 @@ const InfoGrid: React.FC = () => {
       />
       <GridImage
         className="col-span-3"
-        src={Image5}
-        title="A photo from MAHacks 2018"
+        src={Image8}
+        title="A photo from Jolene Pern from MAHacks 2019"
       />
       <GridCard className="col-span-3 bg-accent-blue">
         {`No, we aren't "hacking" servers or bank accounts - in this context, the word hacking means building things using code. MAHacks is all about learning and collaborating to bring an idea to reality - whether it's a website, app, robot, or something else.`}
