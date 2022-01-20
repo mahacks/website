@@ -18,21 +18,25 @@ import { censorEmail } from 'lib/util'
 import Input from 'components/Forms/Input'
 import { useRouter } from 'next/router'
 import Meta from 'components/Meta'
+import Heading from 'components/Heading'
 
 type ApplicationFormData = ApplicationFields & {}
 
 const SectionHeading: React.FC = ({ children }) => (
-  <h2 className="text-xl font-semibold">{children}</h2>
+  <h2 className="text-2xl font-semibold">{children}</h2>
 )
 
 const Application: NextPage<{
   email: string
   secret: string
 }> = ({ email, secret }) => {
-  const { register, handleSubmit } = useForm<ApplicationFormData>()
+  const { register, handleSubmit, watch } = useForm<ApplicationFormData>()
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState(false)
   const router = useRouter()
+
+  const age = watch('age')
+  const isMinor = age === 'minor'
 
   const onSubmit: SubmitHandler<ApplicationFormData> = async (data) => {
     setSubmitting(true)
@@ -119,8 +123,28 @@ const Application: NextPage<{
           <Input {...register('pronouns')} />
         </FormField>
 
-        <FormField label="What school do you go to?">
-          <Input {...register('school')} placeholder="Hacker High School" />
+        <FormField
+          required
+          label="What's your phone number?"
+          description="We'll use this if we ever need to urgently contact you."
+        >
+          <Input required type="tel" {...register('phone')} />
+        </FormField>
+
+        <FormField required label="What high school do you go to?">
+          <Input
+            required
+            {...register('school')}
+            placeholder="Hacker High School"
+          />
+        </FormField>
+
+        <FormField required label="What city is your school in?">
+          <Input
+            required
+            {...register('school')}
+            placeholder="Cambridge, MA"
+          />
         </FormField>
 
         <FormField required label="What's your graduation year?">
@@ -128,18 +152,20 @@ const Application: NextPage<{
             <option hidden disabled selected value="">
               Select an option
             </option>
-            <option value="2022">2022</option>
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
-            <option value="2025">2025</option>
+            <option value="2022">2022 (12th grade)</option>
+            <option value="2023">2023 (11th grade)</option>
+            <option value="2024">2024 (10th grade)</option>
+            <option value="2025">2025 (9th grade)</option>
+            {/* {router.query.allowMiddle && <option value="middle">I'm </option>} */}
           </Input>
         </FormField>
 
-        <FormField label="What's your t-shirt size?">
-          <Input as="select" {...register('shirt_size')}>
+        <FormField required label="What's your t-shirt size?">
+          <Input required as="select" {...register('shirt_size')}>
             <option hidden disabled selected value="">
               Select an option
             </option>
+            <option value="xs">XS</option>
             <option value="s">S</option>
             <option value="m">M</option>
             <option value="l">L</option>
@@ -162,8 +188,8 @@ const Application: NextPage<{
           </Input>
         </FormField>
 
-        <FormField label="Have you attended a hackathon before?">
-          <Input as="select" {...register('hackathon_experience')}>
+        <FormField required label="Have you attended a hackathon before?">
+          <Input required as="select" {...register('hackathon_experience')}>
             <option hidden disabled selected value="">
               Select the first option that applies to you
             </option>
@@ -180,32 +206,50 @@ const Application: NextPage<{
 
         <FormField
           required
-          label="Name"
-          description="Please share your parent or guardian's first name"
+          label="How old will you be on March 1, 2022?"
+          description="If you're under 18, you'll be required to have a parent or guardian to sign the waiver. Note that we'll check your ID on check-in ;)"
         >
-          <Input required {...register('parent_name')} />
+          <Input required as="select" {...register('age')}>
+            <option value="minor" selected>
+              Under 18
+            </option>
+            <option value="adult">Over 18 (I will be a legal adult)</option>
+          </Input>
         </FormField>
 
         <FormField
-          required
-          label="Email"
-          description="Your parent/guardian's email will only be used to send them our waiver, and in case of emergency."
+          required={isMinor}
+          label="Parent/guardian Name"
+          description={"Share your parent or guardian's first name. The following fields are optional if you're over 18."}
         >
-          <Input required type="email" {...register('parent_email')} />
+          <Input required={isMinor} {...register('parent_name')} />
         </FormField>
 
         <FormField
-          required
-          label="Phone number"
-          description="Your parent/guardian's phone number will only be used in case of emergency."
+          required={isMinor}
+          label="Parent/guardian Email"
+          description="Your parent/guardian's email will only be used to send them our waiver (if needed), and in case of emergency."
         >
-          <Input required type="tel" {...register('parent_phone')} />
+          <Input
+            required={isMinor}
+            type="email"
+            {...register('parent_email')}
+          />
+        </FormField>
+
+        <FormField
+          required={isMinor}
+          label="Parent/guardian Phone number"
+          description="Your parent/guardian's phone number will only be used in case of emergency. Optional if you're over 18, but recommended."
+        >
+          <Input required={isMinor} type="tel" {...register('parent_phone')} />
         </FormField>
 
         <SectionHeading>Other</SectionHeading>
 
-        <FormField label="Do you have any dietary restrictions?">
+        <FormField required label="Do you have any dietary restrictions?">
           <Input
+            required
             {...register('dietary_restrictions')}
             placeholder="I only eat cheese"
           />
@@ -231,6 +275,31 @@ const Application: NextPage<{
             <option value="attended before">Attended before</option>
             <option value="other">Other</option>
           </Input>
+        </FormField>
+
+        <SectionHeading>Let&apos;s get to know you a bit...</SectionHeading>
+
+        <FormField label="What's your favorite number?">
+          <Input type="number" {...register('fav_number')} placeholder="42" />
+        </FormField>
+
+        <FormField
+          label="Tell us a joke!"
+          description={
+            <>
+              {
+                "If we don't laugh, we'll reject your application. Don't worry! We're joking."
+              }{' '}
+              <i>Or are we...</i>
+            </>
+          }
+        >
+          <Input
+            as="textarea"
+            placeholder="Why did the programmer quit their job? Because they didn't get arrays!"
+            rows={2}
+            {...register('joke')}
+          />
         </FormField>
 
         {error && (

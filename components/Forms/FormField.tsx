@@ -1,6 +1,8 @@
+import React from 'react'
+
 const FormField: React.FC<{
   label: string
-  description?: string
+  description?: string | React.ReactNode
   required?: boolean
 }> = ({ label, description, children, required }) => (
   <label className="flex flex-col gap-3">

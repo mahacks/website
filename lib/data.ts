@@ -53,10 +53,15 @@ export interface ApplicationFields {
   dietary_restrictions: string
   school: string
   graduation_year: string
+  age: 'adult' | 'minor'
   parent_name: string
   parent_email: string
   parent_phone: string
   hackathon_experience: 'none' | 'virtual' | 'in-person'
+  phone: string
+  fav_number: string
+  joke: string
+  school_city: string
 }
 
 export interface ApplicationRecord {

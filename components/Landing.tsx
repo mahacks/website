@@ -25,7 +25,10 @@ const Landing: React.FC = () => {
           </div>
 
           <p className="sm:text-xl font-bold max-w-xl">
-          Learn to code, hone your skills, build something new, and make new friends with free food and prizes over 24 hours! MAHacks VI is a 24-hour high school hackathon for students of all skill sets and experience. Come join us for a weekend of fun!
+            Learn to code, hone your skills, build something new, and make new
+            friends with free food and prizes over 24 hours! MAHacks VI is a
+            24-hour high school hackathon for students of all skill sets and
+            experience. Come join us for a weekend of fun!
           </p>
 
           <div className="flex gap-3 font-semibold text-xl">
@@ -51,7 +54,7 @@ const Landing: React.FC = () => {
 
             {/* <Link href="/register-interest"> */}
             <a
-              href="https://airtable.com/shrIFLvZjtW0BJrDz"
+              href="https://airtable.com/shruVkzby5uUng11e"
               className="underline text-gray-400 text-xs"
             >
               Not yet sure if you can attend? Get a reminder closer to the

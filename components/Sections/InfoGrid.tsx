@@ -58,10 +58,10 @@ const InfoGrid: React.FC = () => {
       className="pt-20 flex flex-col sm:grid grid-cols-6 grid-flow-row-dense gap-6"
     >
       <GridCard className="col-span-3 border-accent-blue shadow-accent-blue">
-        MAHacks VI will run from March 19-20, 2022. You&apos;ll spend
-        24 hours coding - or learning how - as well as attending workshops,
-        eating food, playing games, making friends, and more! Know a friend 
-        who&apos;d be interested? Invite them!
+        MAHacks VI will run from March 19-20, 2022. You&apos;ll spend 24 hours
+        coding - or learning how - as well as attending workshops, eating food,
+        playing games, making friends, and more! Know a friend who&apos;d be
+        interested? Invite them!
       </GridCard>
       <GridImage
         className="col-span-3"
@@ -91,8 +91,9 @@ const InfoGrid: React.FC = () => {
         {`No, we aren't "hacking" servers or bank accounts, instead, we're "hacking" by making things using code. MAHacks is all about learning and collaborating to bring an idea to reality - whether it's a website, app, robot, or something else.`}
       </GridCard>
       <GridCard className="col-span-3 border-accent-orange shadow-accent-orange">
-        MAHacks will always be completely free, and every participant will walk away with
-        free swag and, hopefully, a prize! Food and drinks will be provided!
+        MAHacks will always be completely free, and every participant will walk
+        away with free swag and, hopefully, a prize! Food and drinks will be
+        provided!
       </GridCard>
       <GridImage
         className="col-span-3"
