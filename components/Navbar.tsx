@@ -6,11 +6,11 @@ import Icon from '@hackclub/icons'
 import Logo from './Logo'
 
 const navItems = {
-  'how it works': '/#how-it-works',
-  register: '/register',
-  faq: '/#faq',
-  sponsors: '/#sponsors',
-  previous: 'https://2019.mahacks.com',
+  'HOW IT WORKS': '/#how-it-works',
+  REGISTER: '/register',
+  FAQ: '/#faq',
+  SPONSORS: '/#sponsors',
+  PREVIOUS: 'https://2019.mahacks.com',
 }
 
 const Navbar: React.FC<{}> = ({}) => {
