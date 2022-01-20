@@ -61,10 +61,10 @@ const InfoGrid: React.FC = () => {
       className="pt-20 flex flex-col sm:grid grid-cols-6 grid-flow-row-dense gap-6"
     >
       <GridCard className="col-span-3 border-accent-blue shadow-accent-blue">
-        MAHacks VI will run from March 19-20, 2022. You’ll spend
+        MAHacks VI will run from March 19-20, 2022. You&apos;ll spend
         24 hours coding - or learning how - as well as attending workshops,
         eating food, playing games, making friends, and more! Know a friend 
-        who'd be interested? Invite them!
+        who&apos;d be interested? Invite them!
       </GridCard>
       <GridImage
         className="col-span-3"
