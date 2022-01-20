@@ -2,11 +2,8 @@ import clsx from 'clsx'
 import Image from 'next/image'
 
 import Image1 from 'photos/2019/IMG_4924.jpeg'
-import Image2 from 'photos/2018/IMG_0817.jpeg'
 import Image3 from 'photos/2019/IMG_2647.jpeg'
 import Image4 from 'photos/1.jpeg'
-import Image5 from 'photos/2018/IMG_0889.jpeg'
-import Image6 from 'photos/2018/8013E4DC-CB5C-4ACB-BAD5-4250F0252F33.jpeg'
 import Image7 from 'photos/2019/20191027_111544.jpeg'
 import Image8 from 'photos/2019/20191026_151133.jpeg'
 
@@ -91,7 +88,7 @@ const InfoGrid: React.FC = () => {
         title="Photo from MAHacks V @ Rapid 7 by Jolene Pern"
       />
       <GridCard className="col-span-3 border-accent-red shadow-accent-red">
-        {`No, we aren't "hacking" servers or bank accounts - instead - we're "hacking" by making. Somewhat like "hacking" something together. MAHacks is all about learning and collaborating to bring an idea to reality - whether it's a website, app, robot, or something else.`}
+        {`No, we aren't "hacking" servers or bank accounts, instead, we're "hacking" by making things using code. MAHacks is all about learning and collaborating to bring an idea to reality - whether it's a website, app, robot, or something else.`}
       </GridCard>
       <GridCard className="col-span-3 border-accent-orange shadow-accent-orange">
         MAHacks will always be completely free, and every participant will walk away with
