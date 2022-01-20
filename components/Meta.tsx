@@ -9,7 +9,7 @@ const Meta: React.FC<{
   image?: string
 }> = ({
   title: pageTitle,
-  description = 'High schoolers: learn to code and meet new friends with 24 hours of learning, hacking, free food and prizes.',
+  description = 'Learn to code, hone your skills, build something new, and make new friends with free food and prizes over 24 hours! MAHacks VI is a 24-hour high school hackathon for students of all skill sets and experience. Come join us for a weekend of fun!',
   image = url + '/img/og/simple.png',
   children,
 }) => {
