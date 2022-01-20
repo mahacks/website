@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
       </div>
 
       <p className="font-semibold text-center pb-4">
-        Copyright &copy; {new Date().getFullYear()} MAHacks.
+        Copyright {new Date().getFullYear()} MAHacks.
       </p>
     </div>
   )
