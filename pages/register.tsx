@@ -114,7 +114,7 @@ const Register: NextPage = () => {
 
         {submitted && (
           <div className="p-5 m-5 bg-bg-card z-10 rounded-xl flex flex-col gap-4 max-w-xl text-center">
-            <h1 className="text-2xl">📬 Check Your Inbox 💌</h1>
+            <h1 className="text-2xl">📬 Check Your Inbox</h1>
 
             <p className="text-center">
               We sent you an email with a link to register. If you don&apos;t
@@ -126,7 +126,7 @@ const Register: NextPage = () => {
               >
                 try again
               </a>
-              , or email us at team@mahacks.com.
+              , or email us at <a href="mailto:team@mahacks.com&sub=MAHacks VI Registration Issues"></a> team@mahacks.com.
             </p>
           </div>
         )}
