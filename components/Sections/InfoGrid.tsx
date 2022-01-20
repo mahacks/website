@@ -61,19 +61,20 @@ const InfoGrid: React.FC = () => {
       className="pt-20 flex flex-col sm:grid grid-cols-6 grid-flow-row-dense gap-6"
     >
       <GridCard className="col-span-3 border-accent-blue shadow-accent-blue">
-        MAHacks runs from March 19-20. You’ll get matched into a team and spend
+        MAHacks VI will run from March 19-20, 2022. You’ll spend
         24 hours coding - or learning how - as well as attending workshops,
-        eating food, playing games, making friends, and more!
+        eating food, playing games, making friends, and more! Know a friend 
+        who'd be interested? Invite them!
       </GridCard>
       <GridImage
         className="col-span-3"
         src={Image3}
-        title="Photo from MAHacks 2019 by Amogh Chaubey"
+        title="Photo from MAHacks V @ Rapid 7 by Amogh Chaubey"
       />
       <GridImage
         className="col-span-2"
         src={Image1}
-        title="Photo from MAHacks 2019 by Chris Walker"
+        title="Photo from MAHacks V @ Rapid 7 by Chris Walker"
       />
       <GridCard className="col-span-2 border-accent-green shadow-accent-green">
         By the end of the weekend, you&apos;ll have an awesome project that
@@ -87,19 +88,19 @@ const InfoGrid: React.FC = () => {
       <GridImage
         className="col-span-3"
         src={Image8}
-        title="A photo from Jolene Pern from MAHacks 2019"
+        title="Photo from MAHacks V @ Rapid 7 by Jolene Pern"
       />
       <GridCard className="col-span-3 border-accent-red shadow-accent-red">
-        {`No, we aren't "hacking" servers or bank accounts - in this context, the word hacking means building things using code. MAHacks is all about learning and collaborating to bring an idea to reality - whether it's a website, app, robot, or something else.`}
+        {`No, we aren't "hacking" servers or bank accounts - instead - we're "hacking" by making. Somewhat like "hacking" something together. MAHacks is all about learning and collaborating to bring an idea to reality - whether it's a website, app, robot, or something else.`}
       </GridCard>
       <GridCard className="col-span-3 border-accent-orange shadow-accent-orange">
-        MAHacks is completely free, and every participant will walk away with
-        free swag and, hopefully, a prize!
+        MAHacks will always be completely free, and every participant will walk away with
+        free swag and, hopefully, a prize! Food and drinks will be provided!
       </GridCard>
       <GridImage
         className="col-span-3"
         src={Image7}
-        title="A photo by Jolene Pern from MAHacks 2019 at Rapid7"
+        title="Photo from MAHacks V @ Rapid 7 by Jolene Pern"
       />
       {/* <GridCard className="col-span-2 text-xl font-medium">
         Prizes will be awarded based on creativity, ingenuity, and functionality.
