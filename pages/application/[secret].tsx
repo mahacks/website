@@ -35,7 +35,7 @@ const Application: NextPage<{
   const [error, setError] = useState(false)
   const router = useRouter()
 
-  const age = watch('age')
+  const age = watch('age', 'minor')
   const isMinor = age === 'minor'
 
   const onSubmit: SubmitHandler<ApplicationFormData> = async (data) => {
@@ -119,8 +119,8 @@ const Application: NextPage<{
           <Input {...register('name')} placeholder="Freddy" />
         </FormField>
 
-        <FormField label="What are your pronouns?">
-          <Input {...register('pronouns')} />
+        <FormField required label="What are your pronouns?">
+          <Input required {...register('pronouns')} />
         </FormField>
 
         <FormField
@@ -209,7 +209,7 @@ const Application: NextPage<{
           label="How old will you be on March 1, 2022?"
           description="If you're under 18, you'll be required to have a parent or guardian to sign the waiver. Note that we'll check your ID on check-in ;)"
         >
-          <Input required as="select" {...register('age')}>
+          <Input required as="select" defaultValue={'minor'} {...register('age')}>
             <option value="minor" selected>
               Under 18
             </option>
