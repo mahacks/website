@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           <div className="flex-1 flex flex-col gap-1">
             <FooterLink href="/conduct">code of conduct</FooterLink>
             <FooterLink href="https://v.mahacks.com/">
-              2019 website
+              old website
             </FooterLink>
           </div>
         </div>
