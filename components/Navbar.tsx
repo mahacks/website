@@ -10,7 +10,7 @@ const navItems = {
   REGISTER: '/register',
   FAQ: '/#faq',
   SPONSORS: '/#sponsors',
-  PREVIOUS: 'https://2019.mahacks.com',
+  PREVIOUS: 'https://v.mahacks.com',
 }
 
 const Navbar: React.FC<{}> = ({}) => {
