@@ -32,7 +32,7 @@ export default async function handler(
     
     Please click the link below to apply for MAHacks VI. We can't wait to see you!
 
-    http://localhost:3000/application/${verificationSecret}
+    http://mahacks.com/application/${verificationSecret}
     
     If you have any questions, please reach out to team@mahacks.com.
     
