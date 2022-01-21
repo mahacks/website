@@ -75,6 +75,9 @@ const Register: NextPage = () => {
                 placeholder="wacky@mahacks.com"
                 ref={inputRef}
               />
+              <p className="text-sm">
+              Use a non-school email address, schools may block external emails. We will never share your email.
+            </p>
             </div>
 
             {error && (
