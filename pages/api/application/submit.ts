@@ -39,14 +39,26 @@ export default async function handler(
 
   try {
     await mg.messages.create(domain, {
-      from: `MAHacks <team@${domain}>`,
+      from: `MAHacks <registration@${domain}>`,
+      'h:Reply-To': 'team@mahacks.com',
       to: email.fields.email,
       subject: `You're registered for MAHacks!`,
       text: dedent`Hello ${name},
+
+      You’re now registered for MAHacks VI!
       
-      You're now registered for MAHacks VI!
+      Here’s some information regarding the event:
+      - MAHacks will start in the morning on March 19 (Saturday), and end the afternoon of March 20. Make sure to add this to your calendar so you don’t forget! The full schedule will be released soon.
+      - We’ll send out some documents, an RSVP link, and important reminders starting a few weeks before the event. Please make sure you’ll receive our emails because you’ll need these in order to attend MAHacks!
+      - You’ll need proof of COVID vaccination and a valid, preferably government-issued ID in order to attend MAHacks. You might want to prepare this now by downloading your vaccination QR code from https://myvaxrecords.mass.gov/
+      - If you have any questions or need help with anything, please don’t hesitate to respond to this email!
       
-      TODO`,
+      We’ll see you in March!
+      
+      Thank you, 
+      The MAHacks Team
+      
+      You can reply directly to this email with any questions.`
     })
   } finally {
   }

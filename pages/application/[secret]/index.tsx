@@ -84,7 +84,7 @@ const Application: NextPage<{
         </a>
 
         <h1 className="text-4xl font-semibold text-center">
-          MAHacks VI Application
+          MAHacks VI Registration
         </h1>
 
         <p>

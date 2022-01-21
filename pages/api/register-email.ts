@@ -26,6 +26,7 @@ export default async function handler(
 
   await mg.messages.create(domain, {
     from: `MAHacks Application <registration@${domain}>`,
+    'h:Reply-To': 'team@mahacks.com',
     to: email,
     subject: 'Your MAHacks Registration Link',
     text: dedent`Hello!
