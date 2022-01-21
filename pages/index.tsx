@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           <p className="text-gray-400 text-sm">
             MAHacks is made possible by our awesome sponsors––<a
               className="underline"
-              href="/MAHacks_VI_Sponsorship_Prospectus.pdf"
+              href="/prospectus"
             >check out our prospectus</a>! Want to work together?&nbsp;
             <a
               className="font-semibold hover:underline inline-flex items-center"
