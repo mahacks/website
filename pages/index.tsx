@@ -29,6 +29,8 @@ const Home: NextPage = () => {
               Let&apos;s talk <BsArrowRight className="inline-block mx-1" />
             </a>
           </p>
+
+          <p className='mt-6'>Sponsors to be released soon.</p>
         </div>
 
         <div id="faq">
