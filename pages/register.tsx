@@ -126,7 +126,9 @@ const Register: NextPage = () => {
               >
                 try again
               </a>
-              , or email us at <a href="mailto:team@mahacks.com&sub=MAHacks VI Registration Issues"></a> team@mahacks.com.
+              , or email us at{' '}
+              <a href="mailto:team@mahacks.com&sub=MAHacks VI Registration Issues"></a>{' '}
+              team@mahacks.com.
             </p>
           </div>
         )}

@@ -57,19 +57,35 @@ const Footer: React.FC = () => {
             </a>
           </div>
 
+          <div>
+            <a
+              target={'_blank'}
+              rel="noreferrer"
+              href="https://hackclub.com/bank/"
+            >
+              {/* eslint-disable @next/next/no-img-element */}
+              <img
+                src="/img/powered-by-hcb.svg"
+                alt="Powered By Hack Club Bank"
+                className="w-44"
+              />
+            </a>
+          </div>
+
           {/* <p className="font-semibold">
         Copyright &copy; {new Date().getFullYear()} MAHacks.
       </p> */}
-          <div className="text-gray-300">
-            <p>Fiscally sponsored by The Hack Foundation.</p>
-            <p>Nonprofit EIN: 81-2908499</p>
-          </div>
         </div>
       </div>
 
-      <p className="font-semibold text-center pb-4">
-        Copyright {new Date().getFullYear()} MAHacks.
-      </p>
+      <div className="text-center pb-6">
+        <p className='font-semibold p-2'>Copyright {new Date().getFullYear()} MAHacks.</p>
+
+        <div className="text-gray-300">
+          <p>Fiscally sponsored by The Hack Foundation.</p>
+          <p>Nonprofit EIN: 81-2908499</p>
+        </div>
+      </div>
     </div>
   )
 }

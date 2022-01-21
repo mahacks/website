@@ -142,7 +142,7 @@ const Application: NextPage<{
         <FormField required label="What city is your school in?">
           <Input
             required
-            {...register('school')}
+            {...register('school_city')}
             placeholder="Cambridge, MA"
           />
         </FormField>
@@ -193,12 +193,12 @@ const Application: NextPage<{
             <option hidden disabled selected value="">
               Select the first option that applies to you
             </option>
-            <option value="none">No</option>
             <option value="mahacks">
               Yes, I&apos;ve attended MAHacks before
             </option>
             <option value="in-person">Yes, in person</option>
             <option value="virtual">Yes, virtually</option>
+            <option value="none">No</option>
           </Input>
         </FormField>
 
@@ -209,7 +209,12 @@ const Application: NextPage<{
           label="How old will you be on March 1, 2022?"
           description="If you're under 18, you'll be required to have a parent or guardian to sign the waiver. Note that we'll check your ID on check-in ;)"
         >
-          <Input required as="select" defaultValue={'minor'} {...register('age')}>
+          <Input
+            required
+            as="select"
+            defaultValue={'minor'}
+            {...register('age')}
+          >
             <option value="minor" selected>
               Under 18
             </option>
@@ -220,7 +225,9 @@ const Application: NextPage<{
         <FormField
           required={isMinor}
           label="Parent/guardian Name"
-          description={"Share your parent or guardian's first name. The following fields are optional if you're over 18."}
+          description={
+            "Share your parent or guardian's first name. The following fields are optional if you're over 18."
+          }
         >
           <Input required={isMinor} {...register('parent_name')} />
         </FormField>
@@ -228,7 +235,7 @@ const Application: NextPage<{
         <FormField
           required={isMinor}
           label="Parent/guardian Email"
-          description="Your parent/guardian's email will only be used to send them our waiver (if needed), and in case of emergency."
+          description="Your parent/guardian's email will only be used to send them any required documents, and in case of emergency."
         >
           <Input
             required={isMinor}
@@ -288,7 +295,7 @@ const Application: NextPage<{
           description={
             <>
               {
-                "If we don't laugh, we'll reject your application. Don't worry! We're joking."
+                "If we don't laugh, we'll delete your application. Don't worry! We're joking."
               }{' '}
               <i>Or are we...</i>
             </>

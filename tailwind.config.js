@@ -53,7 +53,7 @@ module.exports = {
         'glow-lg': '0px 0px 12px rgba(255, 255, 255, 0.6)',
       },
       animation: {
-        'moving-bg': 'movingBackground 6s ease infinite',
+        'moving-bg': 'movingBackground 8s ease infinite',
         'slow-panning': 'infinitePanning 400s linear infinite',
         'slow-spin': 'spin 10s linear infinite',
         'slow-spin-reverse': 'spin 10s linear infinite reverse',

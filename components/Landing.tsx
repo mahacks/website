@@ -25,10 +25,8 @@ const Landing: React.FC = () => {
           </div>
 
           <p className="sm:text-xl font-bold max-w-xl">
-            Learn to code, hone your skills, build something new, and make new
-            friends with free food and prizes over 24 hours! MAHacks VI is a
-            24-hour high school hackathon for students of all skill sets and
-            experience. Come join us for a weekend of fun!
+            High schoolers: Come join us for a weekend of fun! Learn to code, hone your skills, and make new
+            friends, with free food and prizes over 24 hours!
           </p>
 
           <div className="flex gap-3 font-semibold text-xl">
