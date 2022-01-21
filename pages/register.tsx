@@ -61,7 +61,7 @@ const Register: NextPage = () => {
               </a>
             </Link>
 
-            <h1 className="text-2xl">🎟 Register for MAHacks VI 💻</h1>
+            <h1 className="text-2xl">🎟 Register for MAHacks VI</h1>
 
             <p>
               Enter your email to start your MAHacks application. Your ticket is
@@ -75,6 +75,9 @@ const Register: NextPage = () => {
                 placeholder="wacky@mahacks.com"
                 ref={inputRef}
               />
+              <p className="text-sm">
+              Use a non-school email address, schools may block external emails. We will never share your email.
+            </p>
             </div>
 
             {error && (
