@@ -82,7 +82,10 @@ const Footer: React.FC = () => {
         <p className='font-semibold p-2'>Copyright {new Date().getFullYear()} MAHacks.</p>
 
         <div className="text-gray-300">
-          <p>Fiscally sponsored by The Hack Foundation.</p>
+          <p>Fiscally sponsored by <a
+              className="underline"
+              href="https://hackfoundation.org/"
+            >The Hack Foundation</a>.</p>
           <p>Nonprofit EIN: 81-2908499</p>
         </div>
       </div>
