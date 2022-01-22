@@ -12,7 +12,7 @@ const Link: React.FC<{
   url: string
 }> = ({ img, name, url }) => (
   <a className="" href={url} target={'_blank'} rel="noreferrer">
-    <div className="h-full relative rounded-xl border-4 border-white overflow-clip hover:scale-105 grayscale hover:grayscale-0 transition-all">
+    <div className="h-full relative rounded-xl border-4 border-text overflow-clip hover:scale-105 grayscale hover:grayscale-0 transition-all">
       <Image
         src={img}
         alt={name}
