@@ -12,7 +12,7 @@ module.exports = withMDX({
     return [
       {
         source: '/prospectus',
-        destination: '/MAHacks_VI_Sponsorship_Prospectus_20220119.pdf',
+        destination: '/MAHacks_VI_Sponsorship_Prospectus.pdf',
         permanent: false,
       },
     ]
