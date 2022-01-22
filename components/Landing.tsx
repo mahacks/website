@@ -30,7 +30,7 @@ const Landing: React.FC = () => {
             over 24 hours!
           </p>
 
-          <div className="flex gap-3 font-semibold text-xl">
+          <div className="flex gap-3 font-semibold text-2xl drop-shadow-glow-white">
             <div className="flex items-center">
               <HiOutlineLocationMarker
                 className="inline-block mx-2"
