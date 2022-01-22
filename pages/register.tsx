@@ -10,6 +10,7 @@ import Input from 'components/Forms/Input'
 import { useRouter } from 'next/router'
 import Meta from 'components/Meta'
 import PerspectivePlane from 'components/Effects/PerspectivePlane'
+import AnalyticsScript from 'components/AnalyticsScript'
 
 const Register: NextPage = () => {
   const inputRef = useRef<HTMLInputElement>(null)
@@ -38,6 +39,7 @@ const Register: NextPage = () => {
 
   return (
     <>
+      <AnalyticsScript />
       <PerspectivePlane />
 
       <div

@@ -4,10 +4,12 @@ import Navbar from './Navbar'
 import { Parallax } from 'react-scroll-parallax'
 import Landing from './Landing'
 import Footer from './Footer'
+import AnalyticsScript from './AnalyticsScript'
 
 const HomeLayout: React.FC<{}> = ({ children }) => {
   return (
     <div>
+      <AnalyticsScript />
       <Navbar />
       <div className="h-screen">
         <div className="landing-bg-img-container">
