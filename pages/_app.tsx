@@ -5,6 +5,7 @@ import '../styles/nprogress.css'
 import '../styles/globals.css'
 import '../styles/fonts.css'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import Script from 'next/script'
 
 NProgress.configure({
   minimum: 0.4,
@@ -18,6 +19,7 @@ Router.events.on('routeChangeError', () => NProgress.done())
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
+      <Script src="https://simplea.mahacks.com/latest.js"  />
       <ParallaxProvider>
         <Component {...pageProps} />
       </ParallaxProvider>
