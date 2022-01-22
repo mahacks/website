@@ -1,5 +1,14 @@
-import Script from "next/script";
+import Script from 'next/script'
 
-const AnalyticsScript = () => <Script data-collect-dnt="true" src="https://simplea.mahacks.com/latest.js"  />
+const AnalyticsScript = () => (
+  <>
+    {process.env.NODE_ENV === 'production' && (
+      <Script
+        data-collect-dnt="true"
+        src="https://simplea.mahacks.com/latest.js"
+      />
+    )}
+  </>
+)
 
 export default AnalyticsScript
