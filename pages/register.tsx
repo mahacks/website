@@ -76,8 +76,9 @@ const Register: NextPage = () => {
                 ref={inputRef}
               />
               <p className="text-xs text-gray-400">
-              Use a non-school email address, schools may block external emails. We will never share your email.
-            </p>
+                Use a non-school email address, schools may block external
+                emails. We will never share your email.
+              </p>
             </div>
 
             {error && (

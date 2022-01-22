@@ -58,7 +58,7 @@ export default async function handler(
       Thank you, 
       The MAHacks Team
       
-      You can reply directly to this email with any questions.`
+      You can reply directly to this email with any questions.`,
     })
   } finally {
   }

@@ -36,9 +36,7 @@ const Footer: React.FC = () => {
 
           <div className="flex-1 flex flex-col gap-1">
             <FooterLink href="/conduct">code of conduct</FooterLink>
-            <FooterLink href="https://v.mahacks.com/">
-              old website
-            </FooterLink>
+            <FooterLink href="https://v.mahacks.com/">old website</FooterLink>
           </div>
         </div>
         <div className="flex-1 flex flex-col gap-3">
@@ -79,13 +77,18 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="text-center pb-6">
-        <p className='font-semibold p-2'>Copyright {new Date().getFullYear()} MAHacks.</p>
+        <p className="font-semibold p-2">
+          Copyright {new Date().getFullYear()} MAHacks.
+        </p>
 
         <div className="text-gray-300">
-          <p>Fiscally sponsored by <a
-              className="underline"
-              href="https://hackfoundation.org/"
-            >The Hack Foundation</a>.</p>
+          <p>
+            Fiscally sponsored by{' '}
+            <a className="underline" href="https://hackfoundation.org/">
+              The Hack Foundation
+            </a>
+            .
+          </p>
           <p>Nonprofit EIN: 81-2908499</p>
         </div>
       </div>

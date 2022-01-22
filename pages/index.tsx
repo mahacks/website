@@ -6,6 +6,7 @@ import { BsArrowRight } from 'react-icons/bs'
 import FAQ from 'components/Sections/FAQ.mdx'
 import Team from 'components/Sections/Team'
 import Meta from 'components/Meta'
+import Previous from 'components/Sections/Previous'
 
 const Home: NextPage = () => {
   return (
@@ -18,10 +19,11 @@ const Home: NextPage = () => {
         <div id="sponsors">
           <Heading>Sponsors</Heading>
           <p className="text-gray-400 text-sm">
-            MAHacks is made possible by our awesome sponsors–<a
-              className="underline"
-              href="/prospectus"
-            >check out our prospectus</a>! Want to work together?&nbsp;
+            MAHacks is made possible by our awesome sponsors–
+            <a className="underline" href="/prospectus">
+              check out our prospectus
+            </a>
+            ! Want to work together?&nbsp;
             <a
               className="font-semibold hover:underline inline-flex items-center"
               href="mailto:team@mahacks.com"
@@ -29,7 +31,6 @@ const Home: NextPage = () => {
               Let&apos;s talk <BsArrowRight className="inline-block mx-1" />
             </a>
           </p>
-
         </div>
 
         <div id="faq">
@@ -55,15 +56,11 @@ const Home: NextPage = () => {
           <Team />
         </div>
 
-        {/* <div id="previous">
-          <Heading>Previous MAHacks</Heading>
+        <div id="previous">
+          <Heading>Previous Events</Heading>
 
-          <p className=''>
-            <a href='2019.mahacks.com'>2019 Website</a>
-            <a href='https://photos.app.goo.gl/ZBZZoG9zDo5bsSj66'>2019 Photos @ Rapid7</a>
-            
-          </p>
-        </div> */}
+          <Previous />
+        </div>
       </div>
     </HomeLayout>
   )

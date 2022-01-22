@@ -86,8 +86,6 @@ const Application: NextPage<{
 
         <FormField label="Email">{email}</FormField>
 
-
-
         {error && (
           <p className="text-lg text-red-500">
             Oops! That wasn&apos;t saved. Please try again...

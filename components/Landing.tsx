@@ -25,8 +25,9 @@ const Landing: React.FC = () => {
           </div>
 
           <p className="sm:text-xl font-bold max-w-xl">
-            High schoolers: Come join us for a weekend of fun! Learn to code, hone your skills, and make new
-            friends, with free food and prizes over 24 hours!
+            High schoolers: Come join us for a weekend of fun! Learn to code,
+            hone your skills, and make new friends, with free food and prizes
+            over 24 hours!
           </p>
 
           <div className="flex gap-3 font-semibold text-xl">
