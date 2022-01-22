@@ -10,7 +10,7 @@ const Meta: React.FC<{
 }> = ({
   title: pageTitle,
   description = 'Learn to code, hone your skills, build something new, and make new friends with free food and prizes over 24 hours! MAHacks VI is a 24-hour high school hackathon for students of all skill sets and experience. Come join us for a weekend of fun!',
-  image = url + '/img/og/simple.png',
+  image = url + '/img/og/default.png',
   children,
 }) => {
   const title = pageTitle ? `${pageTitle} | ${name}` : name
