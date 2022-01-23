@@ -14,6 +14,10 @@ module.exports = withMDX({
         source: '/prospectus',
         destination: '/MAHacks_VI_Sponsorship_Prospectus_20220122.pdf',
         permanent: false,
+
+        source: '/poster',
+        destination: '/MAHacks_VI_Attendee_Poster_20220123_1.pdf',
+        permanent: false,
       },
     ]
   },
