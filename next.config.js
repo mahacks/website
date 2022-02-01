@@ -34,6 +34,10 @@ module.exports = withMDX({
         source: '/subscribe',
         destination: '/register',
         permanent: false,
+      }, {
+        source: '/join',
+        destination: '/register',
+        permanent: true,
       },
     ]
   },
