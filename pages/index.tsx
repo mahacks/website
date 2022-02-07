@@ -7,6 +7,7 @@ import FAQ from 'components/Sections/FAQ.mdx'
 import Team from 'components/Sections/Team'
 import Meta from 'components/Meta'
 import Previous from 'components/Sections/Previous'
+import Sponsors from 'components/Sections/Sponsors'
 
 const Home: NextPage = () => {
   return (
@@ -31,6 +32,8 @@ const Home: NextPage = () => {
               Let&apos;s talk <BsArrowRight className="inline-block mx-1" />
             </a>
           </p>
+
+          <Sponsors />
         </div>
 
         <div id="faq">
