@@ -93,7 +93,7 @@ const Team: React.FC = () => {
           image={Claire}
         />
         <Person
-          name="Theo Bleir"
+          name="Theo Bleier"
           role="Advisor"
           pronouns="he/him"
           image={Theo}
