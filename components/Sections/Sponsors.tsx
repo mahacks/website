@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import KShaw from 'photos/sponsors/kshaw_bw.png'
-import Insomnia from 'photos/sponsors/insomnia.png'
+import Insomnia from 'photos/sponsors/insomnia_cookies.svg'
 
 const primarySponsors = [
   {
