@@ -1,17 +1,17 @@
 import Image from 'next/image'
-import KShaw from 'photos/sponsors/kshaw_bw.png'
-import Insomnia from 'photos/sponsors/insomnia_cookies.svg'
+import KirklandShaw from 'photos/sponsors/kirklandshaw_bw.png'
+import InsomniaCookies from 'photos/sponsors/insomnia_cookies.svg'
 
 const primarySponsors = [
   {
     name: 'Insomnia Cookies',
-    img: Insomnia,
+    img: InsomniaCookies,
     url: 'https://insomniacookies.com/',
   },
   {
-    name: 'Kirkland and Shaw Inc.',
-    img: KShaw,
-    url: 'https://www.kirklandandshaw.com/',
+    name: 'Kirkland and Shaw',
+    img: KirklandShaw,
+    url: 'https://kirklandandshaw.com/',
   },
 ]
 
