@@ -1,8 +1,14 @@
 import Image from 'next/image'
+import DCU from 'photos/sponsors/dcu.svg'
 import KirklandShaw from 'photos/sponsors/kirklandshaw_bw.png'
 import InsomniaCookies from 'photos/sponsors/insomnia_cookies.svg'
 
 const primarySponsors = [
+  {
+    name: 'DCU',
+    img: DCU,
+    url: 'https://dcu.org/',
+  },
   {
     name: 'Insomnia Cookies',
     img: InsomniaCookies,
