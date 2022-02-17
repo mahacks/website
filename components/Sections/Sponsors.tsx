@@ -5,7 +5,7 @@ import InsomniaCookies from 'photos/sponsors/insomnia_cookies.svg'
 
 const primarySponsors = [
   {
-    name: 'DCU',
+    name: 'Digital Federal Credit Union',
     img: DCU,
     url: 'https://dcu.org/',
   },
