@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import KShaw from 'photos/sponsors/kshaw_bw.png'
+import KShaw from 'photos/sponsors/kirklandshaw_bw.png'
 import Insomnia from 'photos/sponsors/insomnia.png'
-import DCU from 'photos/sponsors/dcu_bw.svg'
+import DCU from 'photos/sponsors/dcu.svg'
 
 const primarySponsors = [
   {
@@ -15,9 +15,9 @@ const primarySponsors = [
     url: 'https://insomniacookies.com/',
   },
   {
-    name: 'Kirkland and Shaw Inc.',
+    name: 'Kirkland and Shaw',
     img: KShaw,
-    url: 'https://www.kirklandandshaw.com/',
+    url: 'https://kirklandandshaw.com/',
   },
 ]
 
@@ -37,7 +37,7 @@ const Grid: React.FC<{
         target={'_blank'}
         rel="noreferrer"
       >
-        <div>
+        <div className='h-full next-image-full-height'>
           <Image
             src={s.img}
             alt={s.name}
