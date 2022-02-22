@@ -2,7 +2,7 @@ import Image from 'next/image'
 import KirklandShaw from 'photos/sponsors/kirklandshaw_bw.png'
 import Insomnia from 'photos/sponsors/insomnia.png'
 import DCU from 'photos/sponsors/dcu.svg'
-import DCU from 'photos/sponsors/sk.svg'
+import SmartKargo from 'photos/sponsors/sk.svg'
 
 const primarySponsors = [
   {
