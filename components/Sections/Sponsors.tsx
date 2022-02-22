@@ -14,7 +14,7 @@ const primarySponsors = [
   {
     name: 'Givebutter',
     img: Givebutter,
-    url: 'https:/givebutter.com/',
+    url: 'https://givebutter.com/',
   },
   // {
   //   name: 'SmartKargo',
