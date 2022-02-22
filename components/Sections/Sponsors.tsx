@@ -1,7 +1,8 @@
 import Image from 'next/image'
-import KShaw from 'photos/sponsors/kirklandshaw_bw.png'
+import KirklandShaw from 'photos/sponsors/kirklandshaw_bw.png'
 import Insomnia from 'photos/sponsors/insomnia.png'
 import DCU from 'photos/sponsors/dcu.svg'
+import DCU from 'photos/sponsors/sk.svg'
 
 const primarySponsors = [
   {
@@ -10,13 +11,18 @@ const primarySponsors = [
     url: 'https://www.dcu.org/',
   },
   {
+    name: 'SmartKargo',
+    img: SmartKargo,
+    url: 'https://www.smartkargo.com/',
+  },
+  {
     name: 'Insomnia Cookies',
     img: Insomnia,
     url: 'https://insomniacookies.com/',
   },
   {
     name: 'Kirkland and Shaw',
-    img: KShaw,
+    img: KirklandShaw,
     url: 'https://kirklandandshaw.com/',
   },
 ]
