@@ -3,7 +3,7 @@ import KShaw from 'photos/sponsors/kirklandshaw_bw.png'
 import Insomnia from 'photos/sponsors/insomnia.png'
 import DCU from 'photos/sponsors/dcu.svg'
 import Givebutter from 'photos/sponsors/givebutter.svg'
-import SmartKargo from 'photos/sponsors/sk.svg'
+// import SmartKargo from 'photos/sponsors/sk.svg'
 
 const primarySponsors = [
   {
@@ -16,11 +16,11 @@ const primarySponsors = [
     img: Givebutter,
     url: 'https:/givebutter.com/',
   },
-  {
-    name: 'SmartKargo',
-    img: SmartKargo,
-    url: 'https://www.smartkargo.com/',
-  },
+  // {
+  //   name: 'SmartKargo',
+  //   img: SmartKargo,
+  //   url: 'https://www.smartkargo.com/',
+  // },
   {
     name: 'Insomnia Cookies',
     img: Insomnia,
