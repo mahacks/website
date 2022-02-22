@@ -2,6 +2,11 @@ import Image from 'next/image'
 import KShaw from 'photos/sponsors/kirklandshaw_bw.png'
 import Insomnia from 'photos/sponsors/insomnia.png'
 import DCU from 'photos/sponsors/dcu.svg'
+<<<<<<< Updated upstream
+=======
+import Givebutter from 'photos/sponsors/givebutter.svg'
+import SmartKargo from 'photos/sponsors/sk.svg'
+>>>>>>> Stashed changes
 
 const primarySponsors = [
   {
@@ -10,6 +15,19 @@ const primarySponsors = [
     url: 'https://www.dcu.org/',
   },
   {
+<<<<<<< Updated upstream
+=======
+    name: 'Givebutter',
+    img: Givebutter,
+    url: 'https:/givebutter.com/',
+  },
+  {
+    name: 'SmartKargo',
+    img: SmartKargo,
+    url: 'https://www.smartkargo.com/',
+  },
+  {
+>>>>>>> Stashed changes
     name: 'Insomnia Cookies',
     img: Insomnia,
     url: 'https://insomniacookies.com/',
