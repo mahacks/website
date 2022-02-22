@@ -2,6 +2,7 @@ import Image from 'next/image'
 import KirklandShaw from 'photos/sponsors/kirklandshaw_bw.png'
 import Insomnia from 'photos/sponsors/insomnia.png'
 import DCU from 'photos/sponsors/dcu.svg'
+import Givebutter from 'photos/sponsors/givebutter.svg'
 import SmartKargo from 'photos/sponsors/sk.svg'
 
 const primarySponsors = [
@@ -9,6 +10,11 @@ const primarySponsors = [
     name: 'DCU',
     img: DCU,
     url: 'https://www.dcu.org/',
+  },
+  {
+    name: 'Givebutter',
+    img: Givebutter,
+    url: 'https:/givebutter.com/',
   },
   {
     name: 'SmartKargo',
