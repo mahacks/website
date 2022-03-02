@@ -5,7 +5,7 @@ import DCU from 'photos/sponsors/dcu.svg'
 import Givebutter from 'photos/sponsors/givebutter.svg'
 // import SmartKargo from 'photos/sponsors/sk.svg'
 // import Virtual from 'photos/sponsors/virtual.svg'
-// import MITOGCR from 'photos/sponsors/mit_ogcr.svg'
+import MITOGCR from 'photos/sponsors/mit_ogcr.svg'
 // import NuVu from 'photos/sponsors/nuvu.svg'
 import IA from 'photos/sponsors/ia-dark.svg'
 import OnStartups from 'photos/sponsors/onstartups.svg'
@@ -57,11 +57,11 @@ const primarySponsors = [
     img: KShaw,
     url: 'https://kirklandandshaw.com/',
   },
-  // {
-  //   name: 'MIT OGCR',
-  //   img: MITOGCR,
-  //   url: 'https://ogcr.mit.edu/',
-  // },
+  {
+    name: 'MIT OGCR',
+    img: MITOGCR,
+    url: 'https://ogcr.mit.edu/',
+  },
   // {
   //   name: 'Virtual, Inc.',
   //   img: Virtual,
