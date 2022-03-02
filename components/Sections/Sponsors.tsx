@@ -4,7 +4,12 @@ import Insomnia from 'photos/sponsors/insomnia.png'
 import DCU from 'photos/sponsors/dcu.svg'
 import Givebutter from 'photos/sponsors/givebutter.svg'
 // import SmartKargo from 'photos/sponsors/sk.svg'
+// import Virtual from 'photos/sponsors/virtual.svg'
+// import MITOGCR from 'photos/sponsors/mit_ogcr.svg'
+// import NuVu from 'photos/sponsors/nuvu.svg'
+// import IA from 'photos/sponsors/ia.svg'
 import OnStartups from 'photos/sponsors/onstartups.svg'
+// import Acera from 'photos/sponsors/acera.svg'
 
 const primarySponsors = [
   {
@@ -15,7 +20,7 @@ const primarySponsors = [
   {
     name: 'DCU',
     img: DCU,
-    url: 'https://www.dcu.org/',
+    url: 'https://dcu.org/',
   },
   {
     name: 'Givebutter',
@@ -25,7 +30,17 @@ const primarySponsors = [
   // {
   //   name: 'SmartKargo',
   //   img: SmartKargo,
-  //   url: 'https://www.smartkargo.com/',
+  //   url: 'https://smartkargo.com/',
+  // },
+  // {
+  //   name: 'NuVu Studio',
+  //   img: NuVu,
+  //   url: 'https://nuvustudio.com/',
+  // },
+  // {
+  //   name: 'Acera School',
+  //   img: Acera,
+  //   url: 'https://aceraschool.org/',
   // },
   {
     name: 'Insomnia Cookies',
@@ -37,6 +52,16 @@ const primarySponsors = [
     img: KShaw,
     url: 'https://kirklandandshaw.com/',
   },
+  // {
+  //   name: 'MIT OGCR',
+  //   img: MITOGCR,
+  //   url: 'https://ogcr.mit.edu/',
+  // },
+  // {
+  //   name: 'Virtual, Inc.',
+  //   img: Virtual,
+  //   url: 'https://virtualinc.com/',
+  // },
 ]
 
 const Grid: React.FC<{
