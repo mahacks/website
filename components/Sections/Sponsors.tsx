@@ -42,7 +42,7 @@ const primarySponsors = [
   //   img: NuVu,
   //   url: 'https://nuvustudio.com/',
   // },
-  // {
+  {
     name: 'Acera School',
     img: Acera,
     url: 'https://aceraschool.org/',
