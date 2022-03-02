@@ -4,8 +4,14 @@ import Insomnia from 'photos/sponsors/insomnia.png'
 import DCU from 'photos/sponsors/dcu.svg'
 import Givebutter from 'photos/sponsors/givebutter.svg'
 // import SmartKargo from 'photos/sponsors/sk.svg'
+import OnStartups from 'photos/sponsors/onstartups.svg'
 
 const primarySponsors = [
+  {
+    name: 'OnStartups',
+    img: OnStartups,
+    url: 'https://onstartups.com/',
+  },
   {
     name: 'DCU',
     img: DCU,
