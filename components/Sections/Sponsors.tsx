@@ -9,7 +9,7 @@ import Givebutter from 'photos/sponsors/givebutter.svg'
 // import NuVu from 'photos/sponsors/nuvu.svg'
 // import IA from 'photos/sponsors/ia.svg'
 import OnStartups from 'photos/sponsors/onstartups.svg'
-// import Acera from 'photos/sponsors/acera.svg'
+import Acera from 'photos/sponsors/acera.svg'
 
 const primarySponsors = [
   {
@@ -38,10 +38,10 @@ const primarySponsors = [
   //   url: 'https://nuvustudio.com/',
   // },
   // {
-  //   name: 'Acera School',
-  //   img: Acera,
-  //   url: 'https://aceraschool.org/',
-  // },
+    name: 'Acera School',
+    img: Acera,
+    url: 'https://aceraschool.org/',
+  },
   {
     name: 'Insomnia Cookies',
     img: Insomnia,
