@@ -7,7 +7,7 @@ import Givebutter from 'photos/sponsors/givebutter.svg'
 // import Virtual from 'photos/sponsors/virtual.svg'
 // import MITOGCR from 'photos/sponsors/mit_ogcr.svg'
 // import NuVu from 'photos/sponsors/nuvu.svg'
-import IA from 'photos/sponsors/ia.svg'
+import IA from 'photos/sponsors/ia-dark.svg'
 import OnStartups from 'photos/sponsors/onstartups.svg'
 import Acera from 'photos/sponsors/acera.svg'
 
@@ -30,7 +30,7 @@ const primarySponsors = [
   {
     name: 'Infinite Analytics',
     img: IA,
-    url: 'https://infinteanalytics.com/',
+    url: 'https://infiniteanalytics.com/',
   },
   // {
   //   name: 'SmartKargo',
