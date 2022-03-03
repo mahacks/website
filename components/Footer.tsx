@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
             <a
               target={'_blank'}
               rel="noreferrer"
-              href="https://hackclub.com/bank/"
+              href="https://bank.hackclub.com/mahacks/"
             >
               {/* eslint-disable @next/next/no-img-element */}
               <img
