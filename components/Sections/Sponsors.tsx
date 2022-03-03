@@ -3,7 +3,7 @@ import KShaw from 'photos/sponsors/kirklandshaw_bw.png'
 import Insomnia from 'photos/sponsors/insomnia.png'
 import DCU from 'photos/sponsors/dcu.svg'
 import Givebutter from 'photos/sponsors/givebutter.svg'
-// import SmartKargo from 'photos/sponsors/sk.svg'
+import SmartKargo from 'photos/sponsors/sk.svg'
 // import Virtual from 'photos/sponsors/virtual.svg'
 import MITOGCR from 'photos/sponsors/mit_ogcr.svg'
 // import NuVu from 'photos/sponsors/nuvu.svg'
@@ -32,11 +32,11 @@ const primarySponsors = [
     img: IA,
     url: 'https://infiniteanalytics.com/',
   },
-  // {
-  //   name: 'SmartKargo',
-  //   img: SmartKargo,
-  //   url: 'https://smartkargo.com/',
-  // },
+  {
+    name: 'SmartKargo',
+    img: SmartKargo,
+    url: 'https://smartkargo.com/',
+  },
   // {
   //   name: 'NuVu Studio',
   //   img: NuVu,
