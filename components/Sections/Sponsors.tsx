@@ -9,7 +9,7 @@ import MITOGCR from 'photos/sponsors/mit_ogcr.svg'
 // import NuVu from 'photos/sponsors/nuvu.svg'
 import IA from 'photos/sponsors/ia-dark.svg'
 import OnStartups from 'photos/sponsors/onstartups.svg'
-import Acera from 'photos/sponsors/acera.svg'
+import Virtual from 'photos/sponsors/virtual.png'
 
 const primarySponsors = [
   {
@@ -43,11 +43,6 @@ const primarySponsors = [
   //   url: 'https://nuvustudio.com/',
   // },
   {
-    name: 'Acera School',
-    img: Acera,
-    url: 'https://aceraschool.org/',
-  },
-  {
     name: 'Insomnia Cookies',
     img: Insomnia,
     url: 'https://insomniacookies.com/',
@@ -62,11 +57,11 @@ const primarySponsors = [
     img: MITOGCR,
     url: 'https://ogcr.mit.edu/',
   },
-  // {
-  //   name: 'Virtual, Inc.',
-  //   img: Virtual,
-  //   url: 'https://virtualinc.com/',
-  // },
+  {
+    name: 'Virtual, Inc.',
+    img: Virtual,
+    url: 'https://virtualinc.com/',
+  },
 ]
 
 const Grid: React.FC<{
