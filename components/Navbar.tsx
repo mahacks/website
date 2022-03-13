@@ -55,6 +55,8 @@ const Navbar: React.FC<{}> = ({}) => {
         isAtTop && menuOpen && 'bg-bg sm:bg-transparent'
       )}
     >
+      {/* <div className='p-1 text-center bg-accent-red font-bold'>MAHacks has been postponed from March 19 to April 10. Please check your email for more details.</div> */}
+
       <div
         className={clsx(
           'flex flex-col sm:flex-row sm:items-center gap-3 md:gap-7 max-w-6xl mx-auto px-8 transition-all',

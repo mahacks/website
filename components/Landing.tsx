@@ -15,6 +15,11 @@ const Landing: React.FC = () => {
       <ShapeRain count={10} />
       <Parallax y={[20, -20]}>
         <div className="px-3 max-w-3xl mx-auto h-screen flex flex-col items-start gap-6 sm:gap-10 justify-center">
+          <div className="p-3 text-center bg-accent-red border-accent-red border-2 rounded-lg font-bold animate-hover">
+            MAHacks has been postponed from March 19-20. Please check
+            your email for more details.
+          </div>
+
           <div>
             <h1 className="text-6xl sm:text-7xl md:text-8xl font-brand font-bold text-transparent bg-clip-text bg-text drop-shadow-glow-white">
               MAHACKS VI
@@ -40,7 +45,7 @@ const Landing: React.FC = () => {
             </div>
             <div className="flex items-center">
               <HiOutlineCalendar className="inline-block mx-2" size={20} />
-              March 19-20
+              Spring 2022
             </div>
           </div>
 

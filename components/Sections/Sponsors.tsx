@@ -80,7 +80,7 @@ const Grid: React.FC<{
         target={'_blank'}
         rel="noreferrer"
       >
-        <div className='h-full next-image-full-height'>
+        <div className="h-full next-image-full-height">
           <Image
             src={s.img}
             alt={s.name}

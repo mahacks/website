@@ -206,7 +206,7 @@ const Application: NextPage<{
 
         <FormField
           required
-          label="How old will you be on March 1, 2022?"
+          label="How old will you be on April 1, 2022?"
           description="If you're under 18, you'll be required to have a parent or guardian to sign the waiver. Note that we'll check your ID on check-in ;)"
         >
           <Input

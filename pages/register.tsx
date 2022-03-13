@@ -50,7 +50,7 @@ const Register: NextPage = () => {
       >
         <Meta
           title="Register"
-          description="Register for MAHacks VI in March, 2022"
+          description="Register for MAHacks VI this Spring"
         />
 
         {!submitted && (

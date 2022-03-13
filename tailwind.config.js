@@ -58,6 +58,7 @@ module.exports = {
         'slow-spin': 'spin 10s linear infinite',
         'slow-spin-reverse': 'spin 10s linear infinite reverse',
         'slow-slide': 'moveUp 90s linear infinite',
+        'hover': 'hover 3s ease infinite',
       },
       keyframes: {
         movingBackground: {
@@ -74,6 +75,10 @@ module.exports = {
           '0%': {transform: 'translateY(%)'},
           '100%': {transform: 'translateY(-100%)'},
         },
+        hover: {
+          from: {transform: 'translateY(0%)'},
+          '50%': {transform: 'translateY(5px)'},
+        }
         // glowPulse: {
         //   from: {
         //     boxShadow: '0px 0px 8px var(--tw-shadow-color)'

@@ -46,14 +46,16 @@ export default async function handler(
       text: dedent`Hello ${name},
 
       You’re now registered for MAHacks VI!
+
+      Due to issues with our venue, we do not have a confirmed date for the event. We will be in touch with you soon to confirm the date. If the selected date doesn't work for you, please send us an email to cancel your registration.
       
       Here’s some information regarding the event:
-      - MAHacks will start in the morning on March 19 (Saturday), and end the afternoon of March 20. Make sure to add this to your calendar so you don’t forget! The full schedule will be released soon.
+      - MAHacks will start in the morning of the weekend chosen. The full schedule will be released soon.
       - We’ll send out some documents, an RSVP link, and important reminders starting a few weeks before the event. Please make sure you’ll receive our emails because you’ll need these in order to attend MAHacks!
       - You’ll need proof of COVID vaccination and a valid, preferably government-issued ID in order to attend MAHacks. You might want to prepare this now by downloading your vaccination QR code from https://myvaxrecords.mass.gov/
       - If you have any questions or need help with anything, please don’t hesitate to respond to this email!
       
-      We’ll see you in March!
+      We’ll see you this spring!
       
       Thank you, 
       The MAHacks Team
